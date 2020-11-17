@@ -78,20 +78,16 @@ using LoveMoneyBlazor.Shared;
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
         {
             __builder.OpenElement(0, "header");
-            __builder.AddMarkupContent(1, "\r\n    ");
-            __builder.OpenComponent<LoveMoneyBlazor.Shared.NavMenu>(2);
+            __builder.OpenComponent<LoveMoneyBlazor.Shared.NavMenu>(1);
             __builder.CloseComponent();
-            __builder.AddMarkupContent(3, "\r\n");
             __builder.CloseElement();
-            __builder.AddMarkupContent(4, "\r\n\r\n");
-            __builder.OpenElement(5, "div");
-            __builder.AddAttribute(6, "class", "container");
-            __builder.AddMarkupContent(7, "\r\n    ");
-            __builder.OpenElement(8, "main");
-            __builder.AddAttribute(9, "role", "main");
-            __builder.AddAttribute(10, "class", "pb-3");
-            __builder.AddMarkupContent(11, "\r\n        ");
-            __builder.AddContent(12, 
+            __builder.AddMarkupContent(2, "\r\n\r\n");
+            __builder.OpenElement(3, "div");
+            __builder.AddAttribute(4, "class", "container");
+            __builder.OpenElement(5, "main");
+            __builder.AddAttribute(6, "role", "main");
+            __builder.AddAttribute(7, "class", "pb-3");
+            __builder.AddContent(8, 
 #nullable restore
 #line 9 "C:\Users\alist\OneDrive\Documents\GitHub\LoveMoneyV1\LoveMoneyBlazor\LoveMoneyBlazor\Shared\MainLayout.razor"
          Body
@@ -100,9 +96,7 @@ using LoveMoneyBlazor.Shared;
 #line hidden
 #nullable disable
             );
-            __builder.AddMarkupContent(13, "\r\n    ");
             __builder.CloseElement();
-            __builder.AddMarkupContent(14, "\r\n");
             __builder.CloseElement();
         }
         #pragma warning restore 1998
