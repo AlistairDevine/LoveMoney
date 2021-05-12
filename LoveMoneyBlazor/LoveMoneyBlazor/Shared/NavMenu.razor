@@ -1,43 +1,107 @@
-﻿<nav id="header-module" class="">
+﻿<!--Header-->
+<nav id="header-module" class="">
+
     <header class="lm-header">
         <div class="lm-header_cont">
-            <div class="-lm-header-brand">
-                <a class="navbar-brand lm-header-brand" href="#">
-                    <i class="lm-header-brand-icon">LoveMoney</i>
+            <!--Header Brand-->
+            <div class="lm-header_brand">
+                <a class="lm-header_brand" href="http://www.lovemoney.com">
+                    <i class="lm-header_brand-icon"></i>Money
                 </a>
-                <a class="brandSelectIsOpen oi oi-arrow-thick-bottom">
-                    <div>
-                        <i></i><i></i>
+                <a>
+                    <div class="lm-header-arrow-cont">
+                        <ul class="lm-header_brand-select-list">
+                            <NavLink class="nav-link" @onclick="() => expandBrandNav = !expandBrandNav">
+                                <!--TODO : show arrow DOWN if expandBrandNav is closed, when open show arrow UP-->
+                                <i class="lm-header-arrow-down oi oi-chevron-bottom"></i>
+                            </NavLink>
+                            @if (expandBrandNav)
+                            {
+                                <li class="dropdown-menu show" aria-labelledby="navbarDropdown" @onclick="() => expandBrandNav = !expandBrandNav">
+                                <li class="lm-header_brand-select-item">
+                                    <NavLink class="nav-link lm-header_brand-select-link lm-header_brand-select-link--if" href="http://www.lovefood.com">
+                                        <span class="lm-header_brand-select-item-link lm-header_brand-select-item-link--if" aria-hidden="true">
+                                            Food<i class="lm-header_brand-select-icon lm-header_brand-select-icon--if"></i>
+                                        </span>
+                                    </NavLink>
+                                </li>
+                                <li class="lm-header_brand-select-item-line"></li>
+                                <li class="lm-header_brand-select-item">
+                                    <NavLink class="nav-link lm-header_brand-select-link lm-header_brand-select-link--le" href="http://www.loveexploring.com">
+                                        <span class="lm-header_brand-select-item-link lm-header_brand-select-item-link--le" aria-hidden="true">
+                                            Exloping<i class="lm-header_brand-select-icon lm-header_brand-select-icon--le"></i>
+                                        </span>
+                                    </NavLink>
+                                </li>
+                                <li class="lm-header_brand-select-item-line"></li>
+                                <li class="lm-header_brand-select-item">
+                                    <NavLink class="nav-link lm-header_brand-select-link lm-header_brand-select-link--lp" href="http://www.loveproperty.com">
+                                        <span class="lm-header_brand-select-item-link lm-header_brand-select-item-link--lp" aria-hidden="true">
+                                           Property<i class="lm-header_brand-select-icon lm-header_brand-select-icon--lp"></i>
+                                        </span>
+                                    </NavLink>
+                                </li>
+                                </li>
+                            }
+                        </ul>
                     </div>
                 </a>
             </div>
-            <div class="lm-header-nav">
 
+            <!--Header Navigation-->
+            <div class="lm-header_nav">
+                <nav class="sitenav">
+                    <ul class="sitenav_list">
+                        <li class="sitenav_item">
+                            <a class="sitenav_link" href="/News">
+                                News
+                                <span class="sitenav_link-bar"></span>
+                            </a>
+                        </li>
+                        <li class="sitenav_item">
+                            <!--TODO : Mouse hover over, display extra nav menu-->
+                            <span class="sitenav_link sitenav_link-text">
+                                Compare
+                                <span class="sitenav_link-bar"></span>
+                            </span>
+                        </li>
+                        <li class="sitenav_item">
+                            <a class="sitenav_link" href="/QandA">
+                                Q & A
+                                <span class="sitenav_link-bar"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <div class="lm-header-actions">
 
+            <!--Header Actions-->
+            <div class="lm-header_actions">
+                <a class="menu-btn js-trigger--mobinav">
+                    <i class="menu-btn_icon"></i>
+                </a>
+                <!--search-btn class to a tag-->
+                <a class="search-btn js-open-search">
+                    <!--TODO : Mouse click, display the search bar over sitenav options and change symbol to cross-->
+                    <i class="search-btn_icon oi oi-magnifying-glass"></i>
+                </a>
             </div>
-            <div class="lm-header-account">
 
+            <!--Header Account-->
+            <div class="lm-header_account">
+                <a class="lm-account_signin" href="https://www.loveincorporated.com/">
+                    | sign in |
+                </a>
             </div>
-            <button class="navbar-toggler" type="button" @onclick="ToggleNavMenu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
-                <ul class="navbar-nav flex-grow-1">
-                    <li class="nav-item">
-                        <NavLink class="nav-link text-dark" href="" Match="NavLinkMatch.All">
-                            <span class="oi oi-home" aria-hidden="true"></span> Home
-                        </NavLink>
-                    </li>
-                </ul>
-            </div>
+
         </div>
     </header>
 </nav>
 
 @code {
     bool collapseNavMenu = true;
+
+    private bool expandBrandNav;
 
     string baseMenuClass = "navbar-collapse d-sm-inline-flex flex-sm-row-reverse";
 

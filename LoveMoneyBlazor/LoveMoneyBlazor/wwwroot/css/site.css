@@ -8,6 +8,20 @@ html, body {
 body {
     margin: 0;
     padding: 0;
+    background: url(../LoveMoneyBackground.png);
+}
+div {
+    display: block;
+}
+a {
+    background-color: transparent;
+}
+ul {
+    list-style-type: disc;
+}
+li {
+    display: list-item;
+    text-align: match-parent;
 }
 #header-module {
     color: #000;
@@ -17,6 +31,265 @@ body {
     width: 100%;
 }
 .lm-header {
-
+    position: relative;
+    z-index: 10;
+    height: 100px;
+    padding-top: 18px;
+    border-bottom: 4px solid red;
+    background-color: #fff;
+    transition: border 400ms ease;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    line-height: 14px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
-
+.lm-header_cont {
+    position: relative;
+    margin: auto;
+    height: 60px;
+}
+.lm-header, .lm-header * {
+    box-sizing: border-box;
+}
+/*Header brand css*/
+.lm-header_brand {
+    display: block;
+    float: left;
+    height: 54px;
+    color: #000000;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    padding-left: 10px;
+    text-decoration: none;
+    transition: color 400ms ease;
+    cursor: pointer;
+}
+.lm-header_brand-icon {
+    content: url(../apple-touch-icon57.png);
+    font-family: Icons;
+    font-size: 42px;
+    line-height: 42px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: none;
+}
+.lm-header_brand a {
+    color: #000000;
+}
+.lm-header-arrow-cont {
+    display: inline-block;
+    margin-top: 20px;
+    height: 14px;
+    vertical-align: top;
+    padding: 0 3px 0 5px;
+    font-size: 18px;
+}
+/*Header nav css*/
+.lm-header_nav {
+    float: left;
+}
+.sitenav {
+    position: relative;
+}
+.sitenav_list {
+    margin: 0 0 0 30px;
+    font-size: 0;
+}
+.sitenav_list, .subnav_list {
+    padding: 0;
+    list-style: none;
+}
+.sitenav_item {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 1em;
+}
+.sitenav_list>li, subnav_list>li {
+    padding: 0;
+}
+.sitenav_link {
+    display: inline-block;
+    position: relative;
+    padding: 20px;
+    transition: color 400ms ease;
+    color: #000000;
+    text-decoration: none;
+}
+.sitenav_link-bar {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: red;
+    opacity: 0;
+    transition: opacity 200ms, transform 200ms;
+    transform: translateX(0) translateY(14px);
+}
+.sitenav_link-text {
+    cursor: default;
+}
+/*Header actions css*/
+.lm-header_actions {
+    position: relative;
+    float: right;
+}
+.menu-btn {
+    color: #000000;
+    display: block;
+    float: right;
+    font-size: 15px;
+    font-weight: 700;
+    height: 60px;
+    line-height: 14px;
+    padding: 22px;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-user-select: none;
+}
+.menu-btn_icon {
+    font-family: Icons;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: none;
+    line-height: 1;
+}
+.search-btn {
+    display: block;
+    position: static;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    margin-top: 9px;
+    margin-bottom: 9px;
+    margin-right: 25px;
+    float: right;
+    color: #000000;
+    border: 2px solid black;
+    cursor: pointer;
+    overflow: hidden;
+    text-decoration: none;
+    transform: translate(0, 0%);
+    transition: border 400ms ease;
+}
+.search-btn_icon {
+    display: inline-block;
+    font-family: Icons;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: none;
+    line-height: 36px;
+    transition: opacity 200ms, transform 200ms;
+    transform: translateX(0) translateY(0);
+}
+.search-btn_icon .search-btn_icon--close {
+    opacity: 1;
+}
+/*Header account css*/
+.lm-header_account {
+    display: inline-block;
+    float: right;
+}
+.lm-account_signin {
+    display: block;
+    position: relative;
+    padding: 24px 20px;
+    margin-right: 10px;
+    color: #000000;
+    font-size: 10px;
+    line-height: 10px;
+    text-decoration: none;
+    max-width: 100%;
+    z-index: 10;
+    -webkit-transition: color 400ms ease;
+    -webkit-transition-duration: 200ms;
+}
+/*Header brand wrapper css*/
+.lm-header_brand-wrapper {
+    width: 940px;
+    margin: auto;
+}
+.lm-header_brand-select {
+    width: 232px;
+    height: auto;
+    background: #ffffff;
+    top: 102px;
+    box-shadow: 1px 2px 4px 3px rgb(0 0 0 / 20%);
+    position: absolute;
+    display: none;
+    padding: 0 17px 17px;
+}
+.lm-header_brand-select-list {
+    list-style: none;
+    margin: 0;
+    overflow: hidden;
+    text-align: left;
+}
+.lm-header_brand-select-item {
+    padding: 17px, 0;
+}
+.lm-header_brand-select-item-line {
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+.lm-header_brand-select-link {
+    color: #000000;
+    text-decoration: none;
+    transition: color 400ms ease;
+    cursor: pointer;
+}
+.lm-header_brand-select-item-link {
+    padding-right: 10px;
+    border-right: 8px solid #000000;
+    display: block;
+    min-height: 30px;
+    -webkit-transition: color 400ms ease;
+}
+.lm-header_brand-select-icon {
+    position: relative;
+}
+.circle-logo_icon .lm-header_brand-select-icon {
+    font-family: Icons;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: none;
+}
+.lm-header_brand-select-item:last-child {
+    padding-bottom: 0px;
+}
+/*--if css*/
+.lm-header_brand-select-item-link--if {
+    border-color: red;
+    font-size: 38px !important;
+    line-height: 36px;
+}
+.lm-header_brand-select-item-link--if .lm-header_brand-select-icon {
+    left: 3px;
+    top: 1px;
+}
+/*--le css*/
+.lm-header_brand-select-item-link--le {
+    border-color: #4cff00;
+    font-size: 38px !important;
+    line-height: 36px;
+}
+.lm-header_brand-select-item-link--le .lm-header_brand-select-icon {
+    left: 3px;
+    top: 0px;
+}
+/*--lp css*/
+.lm-header_brand-select-item-link--lp {
+    border-color: #0094ff;
+    font-size: 38px !important;
+    line-height: 36px;
+}
+.lm-header_brand-select-item-link--lp .lm-header_brand-select-icon {
+    left: 3px;
+    top: 0px;
+}
