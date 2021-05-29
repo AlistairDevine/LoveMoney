@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using LoveMoneyBlazor.Data;
+using AdaptiveCards.Blazor.Extensions;
 
 namespace LoveMoneyBlazor
 {
@@ -28,7 +29,10 @@ namespace LoveMoneyBlazor
         {
             services.AddRazorPages();
             services.AddServerSideBlazor();
-            services.AddSingleton<WeatherForecastService>();
+            services.AddSingleton<ArticleService>();
+            services.AddBlazorAdaptiveCards()
+                .AddTemplate<Article>(Schemas.ImageGallery)
+                .AddFileTemplate("Alternative", "AdaptiveCardsScheme.json");
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

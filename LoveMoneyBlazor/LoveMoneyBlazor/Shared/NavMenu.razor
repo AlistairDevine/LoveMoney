@@ -4,76 +4,37 @@
     <header class="lm-header">
         <div class="lm-header_cont">
             <!--Header Brand-->
-            <div class="lm-header_brand">
-                <a class="lm-header_brand" href="http://www.lovemoney.com">
-                    <i class="lm-header_brand-icon"></i>Money
-                </a>
-                <a>
-                    <div class="lm-header-arrow-cont">
-                        <ul class="lm-header_brand-select-list">
-                            <NavLink class="nav-link" @onclick="() => expandBrandNav = !expandBrandNav">
-                                <!--TODO : show arrow DOWN if expandBrandNav is closed, when open show arrow UP-->
-                                <i class="lm-header-arrow-down oi oi-chevron-bottom"></i>
-                            </NavLink>
-                            @if (expandBrandNav)
-                            {
-                                <li class="dropdown-menu show" aria-labelledby="navbarDropdown" @onclick="() => expandBrandNav = !expandBrandNav">
-                                <li class="lm-header_brand-select-item">
-                                    <NavLink class="nav-link lm-header_brand-select-link lm-header_brand-select-link--if" href="http://www.lovefood.com">
-                                        <span class="lm-header_brand-select-item-link lm-header_brand-select-item-link--if" aria-hidden="true">
-                                            Food<i class="lm-header_brand-select-icon lm-header_brand-select-icon--if"></i>
-                                        </span>
-                                    </NavLink>
-                                </li>
-                                <li class="lm-header_brand-select-item-line"></li>
-                                <li class="lm-header_brand-select-item">
-                                    <NavLink class="nav-link lm-header_brand-select-link lm-header_brand-select-link--le" href="http://www.loveexploring.com">
-                                        <span class="lm-header_brand-select-item-link lm-header_brand-select-item-link--le" aria-hidden="true">
-                                            Exloping<i class="lm-header_brand-select-icon lm-header_brand-select-icon--le"></i>
-                                        </span>
-                                    </NavLink>
-                                </li>
-                                <li class="lm-header_brand-select-item-line"></li>
-                                <li class="lm-header_brand-select-item">
-                                    <NavLink class="nav-link lm-header_brand-select-link lm-header_brand-select-link--lp" href="http://www.loveproperty.com">
-                                        <span class="lm-header_brand-select-item-link lm-header_brand-select-item-link--lp" aria-hidden="true">
-                                           Property<i class="lm-header_brand-select-icon lm-header_brand-select-icon--lp"></i>
-                                        </span>
-                                    </NavLink>
-                                </li>
-                                </li>
-                            }
-                        </ul>
-                    </div>
-                </a>
-            </div>
+            <HeaderBrand />
 
-            <!--Header Navigation-->
-            <div class="lm-header_nav">
-                <nav class="sitenav">
-                    <ul class="sitenav_list">
-                        <li class="sitenav_item">
-                            <a class="sitenav_link" href="/News">
-                                News
-                                <span class="sitenav_link-bar"></span>
-                            </a>
-                        </li>
-                        <li class="sitenav_item">
-                            <!--TODO : Mouse hover over, display extra nav menu-->
-                            <span class="sitenav_link sitenav_link-text">
-                                Compare
-                                <span class="sitenav_link-bar"></span>
-                            </span>
-                        </li>
-                        <li class="sitenav_item">
-                            <a class="sitenav_link" href="/QandA">
-                                Q & A
-                                <span class="sitenav_link-bar"></span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+                <!--Header Navigation-->
+                <div class="@NavigationMenuCssClass">
+                    <nav class="sitenav">
+                        <ul class="sitenav_list">
+                            <li class="sitenav_item">
+                                <a class="sitenav_link" href="/News">
+                                    News
+                                </a>
+                            </li>
+                            <li class="sitenav_item">
+                                <span class="sitenav_link sitenav_link-text compare" @onmouseover="ToggleHeaderSubNav" @onmouseout="ToggleHeaderSubNav">
+                                    Compare
+                                </span>
+                            </li>
+                            <li class="sitenav_item">
+                                <a class="sitenav_link" href="/QandA">
+                                    Q & A
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!--Header Account-->
+                <div class="@AccountMenuCssClass">
+                    <a class="lm-account_signin" href="https://www.loveincorporated.com/">
+                        | sign in |
+                    </a>
+                </div>
 
             <!--Header Actions-->
             <div class="lm-header_actions">
@@ -81,34 +42,234 @@
                     <i class="menu-btn_icon"></i>
                 </a>
                 <!--search-btn class to a tag-->
-                <a class="search-btn js-open-search">
-                    <!--TODO : Mouse click, display the search bar over sitenav options and change symbol to cross-->
-                    <i class="search-btn_icon oi oi-magnifying-glass"></i>
+                <a class="search-btn">
+                    @if (expandHeaderSearch)
+                    {
+                        <i class="search-btn_icon oi oi-x" @onclick="ToggleHeaderSearch"></i>
+                    }
+                    else
+                    {
+                        <i class="search-btn_icon oi oi-magnifying-glass" @onclick="ToggleHeaderSearch"></i>
+                    }
                 </a>
             </div>
 
-            <!--Header Account-->
-            <div class="lm-header_account">
-                <a class="lm-account_signin" href="https://www.loveincorporated.com/">
-                    | sign in |
-                </a>
-            </div>
+                <!--Header search bar component-->
+                <form class="@TopSearchCssClass">
+                    <div class="top-search_fieldset">
+                        <buton class="top-search_submit" type="submit">
+                            <i class="top-search_icon"></i>
+                        </buton>
+                        <input class="top-search_input" type="text" placeholder="Search lovemoney" />
+                    </div>
+                </form>
 
         </div>
     </header>
+    @if (expandSubNav)
+    {
+    <!--Compare hover sub-navigation menu-->
+        <section class="subnav-wrapper" @onmouseover="ToggleHeaderSubNav" @onmouseout="ToggleHeaderSubNav">
+            <nav class="subnav">
+                <div class="subnav_cont">
+                    <ul class="subnav_list">
+                        <!--Subnav item, 9-->
+                        <!--new column-->
+                        <li class="column">
+                            <!--Credit cards-->
+                        <li class="subnav_item">
+                            <a class="subnav_link" href="/creditcards" @onmouseover="() => expandCreditCardsNav = !expandCreditCardsNav" @onmouseout="() => expandCreditCardsNav = false">
+                                Credit Cards <i class="subnav_icon"></i>
+                            </a>
+                            <!--credit card extra options-->
+                            @if (expandCreditCardsNav)
+                            {
+                                <div class="subcentre">
+                                    <ul class="subcentre_list">
+                                        <!--Subcentre item, 9-->
+                                        <li class="subcentre_item">
+                                            <a class="subnav_link" href="/creditcards/balance-transfer">
+                                                Balance Transfer <i class="subnav_icon"></i>
+                                            </a>
+                                        </li>
+                                        <li class="subcentre_item">
+                                            <a class="subnav_link" href="/creditcards/purchases">
+                                                Purchase <i class="subnav_icon"></i>
+                                            </a>
+                                        </li>
+                                        <li class="subcentre_item">
+                                            <a class="subnav_link" href="/creditcards/balance-transfer-purchases">
+                                                Balance Transfer & Purchase <i class="subnav_icon"></i>
+                                            </a>
+                                        </li>
+                                        <li class="subcentre_item">
+                                            <a class="subnav_link" href="/creditcards/credit-building">
+                                                Credit Building <i class="subnav_icon"></i>
+                                            </a>
+                                        </li>
+                                        <li class="subcentre_item">
+                                            <a class="subnav_link" href="/creditcards/bad-credit">
+                                                Bad Credit <i class="subnav_icon"></i>
+                                            </a>
+                                        </li>
+                                        <li class="subcentre_item">
+                                            <a class="subnav_link" href="/creditcards/cashback">
+                                                Cashback <i class="subnav_icon"></i>
+                                            </a>
+                                        </li>
+                                        <li class="subcentre_item">
+                                            <a class="subnav_link" href="/creditcards/rewards">
+                                                Rewards <i class="subnav_icon"></i>
+                                            </a>
+                                        </li>
+                                        <li class="subcentre_item">
+                                            <a class="subnav_link" href="/creditcards/foreign-use">
+                                                Foreign Use <i class="subnav_icon"></i>
+                                            </a>
+                                        </li>
+                                        <li class="subcentre_item">
+                                            <a class="subnav_link" href="/creditcards/money-transfer">
+                                                Money Transfer <i class="subnav_icon"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            }
+                        </li>
+                        <!--Loans-->
+                        <li class="subnav_item">
+                            <a class="subnav_link" href="/loans" @onmouseover="() => expandLoanNav = !expandLoanNav" @onmouseout="() => expandLoanNav = false">
+                                Loans <i class="subnav_icon"></i>
+                            </a>
+                            <!--Loan extra options-->
+                            @if (expandLoanNav)
+                            {
+                                <div class="subcentre">
+                                    <ul class="subcentre_list">
+                                        <li class="subcentre_item">
+                                            <a class="subnav_link" href="/loans/car-finance">
+                                                Car Finance <i class="subnav_icon"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            }
+                        </li>
+                        <!--Savings-->
+                        <li class="subnav_item">
+                            <a class="subnav_link" href="/savings">
+                                Savings <i class="subnav_icon"></i>
+                            </a>
+                            <div class="subcentre"></div>
+                        </li>
+                        </li>
+                        <!--new column-->
+                        <li class="column">
+                            <!--Current Accounts-->
+                            <p class="subnav_item">
+                                <a class="subnav_link" href="/currentaccounts">
+                                    Current Accounts <i class="subnav_icon"></i>
+                                </a>
+                                <div class="subcentre"></div>
+                            </p>
+                            <!--Mortgages-->
+                            <p class="subnav_item">
+                                <a class="subnav_link" href="/mortgages">
+                                    Mortgages <i class="subnav_icon"></i>
+                                </a>
+                                <div class="subcentre"></div>
+                            </p>
+                            <!--Utilties-->
+                            <p class="subnav_item">
+                                <a class="subnav_link" href="/utilities">
+                                    Utilities <i class="subnav_icon"></i>
+                                </a>
+                                <div class="subcentre"></div>
+                            </p>
+                        </li>
+                        <!--new column-->
+                        <li class="column">
+                            <!--Insurance-->
+                        <li class="subnav_item">
+                            <a class="subnav_link" href="/insurance" @onmouseover="() => expandInsuranceNav = !expandInsuranceNav" @onmouseout="() => expandInsuranceNav = false">
+                                Insurance <i class="subnav_icon"></i>
+                            </a>
+                            <!--Insurance extra options-->
+                            @if (expandInsuranceNav)
+                            {
+                                <div class="subcentre">
+                                    <ul class="subcentre_list">
+                                        <li class="subcentre_item">
+                                            <a class="subnav_link" href="/insurance/life-insurance">
+                                                Life Insurance <i class="subnav_icon"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            }
+                        </li>
+                        <!--Investing-->
+                        <li class="subnav_item">
+                            <a class="subnav_link" href="/investing">
+                                Investing <i class="subnav_icon"></i>
+                            </a>
+                            <div class="subcentre"></div>
+                        </li>
+                        <!--Money Transfer-->
+                        <li class="subnav_item">
+                            <a class="subnav_link" href="/moneytransfer" @onmouseover="() => expandMoneyTransferNav = !expandMoneyTransferNav" @onmouseout="() => expandMoneyTransferNav = false">
+                                Money Transfer <i class="subnav_icon"></i>
+                            </a>
+                            <!--Money transfer extra options-->
+                            @if (expandMoneyTransferNav)
+                            {
+                                <div class="subcentre">
+                                    <ul class="subcentre_list">
+                                        <li class="subcentre_item">
+                                            <a class="subnav_link" href="/moneytransfer/send-money-abroad">
+                                                Send Money Abroad <i class="subnav_icon"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            }
+                        </li>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+    }
 </nav>
 
+<!--Page topic navigation menu-->
+<TopicsMenu />
+
 @code {
-    bool collapseNavMenu = true;
+    bool expandHeaderSearch = false;
+    bool expandSubNav = false;
 
-    private bool expandBrandNav;
+    //Sub-navigation menu hover features
+    private bool expandCreditCardsNav;
+    private bool expandLoanNav;
+    private bool expandInsuranceNav;
+    private bool expandMoneyTransferNav;
 
-    string baseMenuClass = "navbar-collapse d-sm-inline-flex flex-sm-row-reverse";
+    string baseTopSearchClass = "top-search top-search-header";
+    string TopSearchCssClass => baseTopSearchClass + (expandHeaderSearch ? "" : " collapse");
 
-    string NavMenuCssClass => baseMenuClass + (collapseNavMenu ? " collapse" : "");
+    string baseHeaderAccountClass = "lm-header_account";
+    string AccountMenuCssClass => baseHeaderAccountClass + (expandHeaderSearch ? " collapse" : "");
 
-    void ToggleNavMenu()
+    string baseHeaderNavigationClass = "lm-header_nav";
+    string NavigationMenuCssClass => baseHeaderNavigationClass + (expandHeaderSearch ? " collapse" : "");
+
+    void ToggleHeaderSearch()
     {
-        collapseNavMenu = !collapseNavMenu;
+        expandHeaderSearch = !expandHeaderSearch;
+    }
+    void ToggleHeaderSubNav()
+    {
+        expandSubNav = !expandSubNav;
     }
 }
