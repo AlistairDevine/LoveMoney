@@ -64,5 +64,5 @@ C:\Users\Dvine\Documents\GitHub\LoveMoneyV1\LoveMoneyBlazor\LoveMoneyBlazor\obj\
 C:\Users\Dvine\Documents\GitHub\LoveMoneyV1\LoveMoneyBlazor\LoveMoneyBlazor\obj\Debug\net5.0\Razor\Pages\TemplatedComponent\MaxWidthStructure.razor.g.cs
 C:\Users\Dvine\Documents\GitHub\LoveMoneyV1\LoveMoneyBlazor\LoveMoneyBlazor\obj\Debug\net5.0\RazorDeclaration\Pages\TemplatedComponent\HalfWidthStructure.razor.g.cs
 C:\Users\Dvine\Documents\GitHub\LoveMoneyV1\LoveMoneyBlazor\LoveMoneyBlazor\obj\Debug\net5.0\Razor\Pages\TemplatedComponent\HalfWidthStructure.razor.g.cs
-C:\Users\Dvine\Documents\GitHub\LoveMoneyV1\LoveMoneyBlazor\LoveMoneyBlazor\obj\Debug\net5.0\LoveMoneyBlazor.csproj.AssemblyReference.cache
 C:\Users\Dvine\Documents\GitHub\LoveMoneyV1\LoveMoneyBlazor\LoveMoneyBlazor\bin\Debug\net5.0\AdaptiveCardsScheme.json
+C:\Users\Dvine\Documents\GitHub\LoveMoneyV1\LoveMoneyBlazor\LoveMoneyBlazor\obj\Debug\net5.0\LoveMoneyBlazor.csproj.AssemblyReference.cache

@@ -1,0 +1,5 @@
+﻿<StaticWebAssets Version="1.0">
+  <ContentRoot BasePath="/" Path="C:\Users\Dvine\Documents\GitHub\LoveMoneyV1\LoveMoneyBlazor\LoveMoneyBlazor.UI\bin\Debug\net5.0\wwwroot\" />
+  <ContentRoot BasePath="/" Path="C:\Users\Dvine\Documents\GitHub\LoveMoneyV1\LoveMoneyBlazor\LoveMoneyBlazor.UI\obj\Debug\net5.0\scopedcss\bundle\" />
+  <ContentRoot BasePath="_content/AdaptiveCardsBlazor" Path="C:\Users\Dvine\.nuget\packages\adaptivecardsblazor\2.0.0\build\..\staticwebassets\" />
+</StaticWebAssets>
