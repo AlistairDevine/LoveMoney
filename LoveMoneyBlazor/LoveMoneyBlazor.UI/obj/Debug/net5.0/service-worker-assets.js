@@ -13,7 +13,7 @@
       "url": "_content\/AdaptiveCardsBlazor\/styles.css"
     },
     {
-      "hash": "sha256-Rjy9MelzvxBKG5nhHsnKN1aw4WHaY5QGTrUea0yFMIs=",
+      "hash": "sha256-qlTG\/ieex33\/FgTfi37FwcuzuiVLEClG8uQo7uvx\/vo=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -833,11 +833,11 @@
       "url": "_framework\/dotnet.5.0.6.js"
     },
     {
-      "hash": "sha256-4H7cAsP5X3vlYrYf\/eSK\/NXVolnIXnE1C8BEORu5vJY=",
+      "hash": "sha256-vlgXT79VLTif54iP6ZeAJZ674qTbiZtB7lrFUYF\/dTk=",
       "url": "_framework\/LoveMoneyBlazor.UI.dll"
     },
     {
-      "hash": "sha256-v+TjebUYDRhB7Q4fENl52anmIzEgU+EV\/198kdQ4XIo=",
+      "hash": "sha256-y5LCuEeuOVyf8Y8tjz+R7Px661eI4EEUf93oLT3ULiM=",
       "url": "_framework\/LoveMoneyBlazor.UI.pdb"
     },
     {
@@ -1673,7 +1673,7 @@
       "url": "css\/bootstrap\/bootstrap.min.css.map"
     },
     {
-      "hash": "sha256-Rt\/DLu8yb4xsW6y1VxRFgBUBjdbqSFAozhVTZkS7y5M=",
+      "hash": "sha256-XFSQfFukyBgNkHWBo+Lm0z6M8yOQ2m9WU\/Zo\/Qjq3gs=",
       "url": "css\/main.css"
     },
     {
@@ -1713,7 +1713,7 @@
       "url": "css\/open-iconic\/README.md"
     },
     {
-      "hash": "sha256-dB9dsWZOAjRA8HDNMAHyGLlWHagye7OvG6WHBg3aKIk=",
+      "hash": "sha256-+z5i8pjQncFCWBCyw5YQzxuxFYQ73mlbivINBZIO+Nk=",
       "url": "css\/site.css"
     },
     {
@@ -1745,7 +1745,7 @@
       "url": "Images\/articleImageTwoSmall.jpg"
     },
     {
-      "hash": "sha256-0QLFpF09OegwYWEoVSF\/bYiLWM9L1BhGcBP2d7rr2hs=",
+      "hash": "sha256-wMQBI94cqx3K3++xJfn66BThW3kSCFHmbNWJ0yJP3D0=",
       "url": "index.html"
     },
     {
@@ -1761,10 +1761,6 @@
       "url": "sample-data\/AdaptiveCardsScheme.json"
     },
     {
-      "hash": "sha256-yzFf+O\/mlH+Q9klUSqXP2kxGKOUFLPxaww8da8fKhGU=",
-      "url": "sample-data\/weather.json"
-    },
-    {
       "hash": "sha256-PQbCAogFbAbB+UpY7r1Pb9XAU\/XG6EjV1doyWTL1Q7E=",
       "url": "LoveMoneyBlazor.UI.styles.css"
     },
@@ -1773,5 +1769,5 @@
       "url": "LoveMoneyBlazor.UI.bundle.scp.css"
     }
   ],
-  "version": "UxeLgvdP"
+  "version": "B+mfYAIG"
 };

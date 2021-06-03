@@ -132,7 +132,7 @@ using Blazored.LocalStorage;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 248 "C:\Users\Dvine\Documents\GitHub\LoveMoneyV1\LoveMoneyBlazor\LoveMoneyBlazor.UI\Shared\NavMenu.razor"
+#line 249 "C:\Users\Dvine\Documents\GitHub\LoveMoneyV1\LoveMoneyBlazor\LoveMoneyBlazor.UI\Shared\NavMenu.razor"
        
     bool expandHeaderSearch = false;
     bool expandSubNav = false;
@@ -143,14 +143,17 @@ using Blazored.LocalStorage;
     private bool expandInsuranceNav;
     private bool expandMoneyTransferNav;
 
-    string baseTopSearchClass = "top-search top-search-header";
-    string TopSearchCssClass => baseTopSearchClass + (expandHeaderSearch ? "" : " collapse");
+    string baseTopSearchClass = "top-search-header";
+    string TopSearchCssClass => baseTopSearchClass + (expandHeaderSearch ? "" : "display");
 
     string baseHeaderAccountClass = "lm-header_account";
-    string AccountMenuCssClass => baseHeaderAccountClass + (expandHeaderSearch ? " collapse" : "");
+    string AccountMenuCssClass => baseHeaderAccountClass + (expandHeaderSearch ? "display" : "");
 
     string baseHeaderNavigationClass = "lm-header_nav";
-    string NavigationMenuCssClass => baseHeaderNavigationClass + (expandHeaderSearch ? " collapse" : "");
+    string NavigationMenuCssClass => baseHeaderNavigationClass + (expandHeaderSearch ? "display" : "");
+
+    string baseHeaderActionClass = "lm-header_actions";
+    string ActionCssClass => baseHeaderActionClass + (expandHeaderSearch ? "display" : "");
 
     void ToggleHeaderSearch()
     {

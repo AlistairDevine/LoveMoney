@@ -48,6 +48,10 @@ i.oi:hover, i.oi:active {
 .lm-header_cont {
     height: 60px;
 }
+.lm-header_adjustable {
+    display: flex;
+    justify-content: space-evenly;
+}
 /*Header brand css*/
 .lm-header_brand {
     display: block;
@@ -93,7 +97,7 @@ i.oi:hover, i.oi:active {
     opacity: 10;
     animation: 0.5s fade-in ease-out;
 }
-    .lm-header_nav collapse {
+    .lm-header_navdisplay {
         display: none;
         opacity: 0;
         transition: 0.5s opacity ease-out;
@@ -127,19 +131,13 @@ i.oi:hover, i.oi:active {
     height: 80px;
 }
 /*Header actions css*/
-.lm-header_account {
-    display: inline-block;
-    opacity: 10;
-    animation: 0.5s fade-in ease-out;
-}
-    .lm-header_account collapse {
-        display: none;
-        opacity: 0;
-        transition: 0.5s opacity ease-out;
-    }
 .lm-header_actions {
     float: right;
 }
+    .lm-header_actionsdisplay {
+        left: 100%;
+        position: sticky;
+    }
 .menu-btn {
     float: right;
     height: 60px;
@@ -161,11 +159,22 @@ i.oi:hover, i.oi:active {
     height: 36px;
     font-size: 20px;
     line-height: 30px;
+    padding-top: 4px;
 }
 .search-btn_icon .search-btn_icon--close {
     opacity: 1;
 }
 /*Header account css*/
+.lm-header_account {
+    display: inline-block;
+    opacity: 10;
+    animation: 0.5s fade-in ease-out;
+}
+    .lm-header_accountdisplay {
+        display: none;
+        opacity: 0;
+        transition: 0.5s opacity ease-out;
+    }
 .lm-account_signin {
     display: block;
     padding: 24px 20px;
@@ -336,6 +345,8 @@ nav {
     background: #ffffff;
     border-bottom: 1px solid #000000;
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 .page-nav_content {
     padding: 22px 0px;
@@ -376,14 +387,14 @@ nav {
 .top-search-header {
     position: absolute;
     right: 140px;
-    width: 450px;
+    width: 45%;
     display: inline-block;
     animation: 0.5s fade-in ease-out;
     transition: transform 0.5s opacity ease-out;
     transform-origin: 100% 50%;
 }
-.top-search-header collapse {
-    display: none;
+.top-search-headerdisplay {
+    display: none !important;
 }
 .top-search_fieldset {
     border-bottom: 1px solid #000000;

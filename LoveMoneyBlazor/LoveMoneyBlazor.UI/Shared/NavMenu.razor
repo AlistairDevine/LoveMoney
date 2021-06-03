@@ -6,64 +6,65 @@
             <!--Header Brand-->
             <HeaderBrand />
 
-            <!--Header Navigation-->
-            <div class="@NavigationMenuCssClass">
-                <nav class="sitenav">
-                    <ul class="sitenav_list">
-                        <li class="sitenav_item">
-                            <a class="sitenav_link" href="/News">
-                                News
-                            </a>
-                        </li>
-                        <li class="sitenav_item">
-                            <span class="sitenav_link sitenav_link-text compare" @onmouseover="ToggleHeaderSubNav" @onmouseout="ToggleHeaderSubNav">
-                                Compare
-                            </span>
-                        </li>
-                        <li class="sitenav_item">
-                            <a class="sitenav_link" href="/QandA">
-                                Q & A
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-
-            <!--Header Account-->
-            <div class="@AccountMenuCssClass">
-                <a class="lm-account_signin" href="https://www.loveincorporated.com/">
-                    | sign in |
-                </a>
-            </div>
-
-            <!--Header Actions-->
-            <div class="lm-header_actions">
-                <a class="menu-btn js-trigger--mobinav">
-                    <i class="menu-btn_icon"></i>
-                </a>
-                <!--search-btn class to a tag-->
-                <a class="search-btn">
-                    @if (expandHeaderSearch)
-                    {
-                        <i class="search-btn_icon oi oi-x" @onclick="ToggleHeaderSearch"></i>
-                    }
-                    else
-                    {
-                        <i class="search-btn_icon oi oi-magnifying-glass" @onclick="ToggleHeaderSearch"></i>
-                    }
-                </a>
-            </div>
-
-            <!--Header search bar component-->
-            <form class="@TopSearchCssClass">
-                <div class="top-search_fieldset">
-                    <buton class="top-search_submit" type="submit">
-                        <i class="top-search_icon"></i>
-                    </buton>
-                    <input class="top-search_input" type="text" placeholder="Search lovemoney" />
+            <div class="lm-header_adjustable">
+                <!--Header Navigation-->
+                <div class="@NavigationMenuCssClass">
+                    <nav class="sitenav">
+                        <ul class="sitenav_list">
+                            <li class="sitenav_item">
+                                <a class="sitenav_link" href="/News">
+                                    News
+                                </a>
+                            </li>
+                            <li class="sitenav_item">
+                                <span class="sitenav_link sitenav_link-text compare" @onmouseover="ToggleHeaderSubNav" @onmouseout="ToggleHeaderSubNav">
+                                    Compare
+                                </span>
+                            </li>
+                            <li class="sitenav_item">
+                                <a class="sitenav_link" href="/QandA">
+                                    Q & A
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
-            </form>
 
+                <!--Header Account-->
+                <div class="@AccountMenuCssClass">
+                    <a class="lm-account_signin" href="https://www.loveincorporated.com/">
+                        | sign in |
+                    </a>
+                </div>
+
+                <!--Header Actions-->
+                <div class="@ActionCssClass">
+                    <a class="menu-btn js-trigger--mobinav">
+                        <i class="menu-btn_icon"></i>
+                    </a>
+                    <!--search-btn class to a tag-->
+                    <a class="search-btn">
+                        @if (expandHeaderSearch)
+                        {
+                            <i class="search-btn_icon oi oi-x" @onclick="ToggleHeaderSearch"></i>
+                        }
+                        else
+                        {
+                            <i class="search-btn_icon oi oi-magnifying-glass" @onclick="ToggleHeaderSearch"></i>
+                        }
+                    </a>
+                </div>
+
+                <!--Header search bar component-->
+                <section class="@TopSearchCssClass">
+                    <div class="top-search_fieldset">
+                        <buton class="top-search_submit" type="submit">
+                            <i class="top-search_icon"></i>
+                        </buton>
+                        <input class="top-search_input" type="text" placeholder="Search lovemoney" />
+                    </div>
+                </section>
+            </div>
         </div>
     </header>
     @if (expandSubNav)
@@ -255,14 +256,17 @@
     private bool expandInsuranceNav;
     private bool expandMoneyTransferNav;
 
-    string baseTopSearchClass = "top-search top-search-header";
-    string TopSearchCssClass => baseTopSearchClass + (expandHeaderSearch ? "" : " collapse");
+    string baseTopSearchClass = "top-search-header";
+    string TopSearchCssClass => baseTopSearchClass + (expandHeaderSearch ? "" : "display");
 
     string baseHeaderAccountClass = "lm-header_account";
-    string AccountMenuCssClass => baseHeaderAccountClass + (expandHeaderSearch ? " collapse" : "");
+    string AccountMenuCssClass => baseHeaderAccountClass + (expandHeaderSearch ? "display" : "");
 
     string baseHeaderNavigationClass = "lm-header_nav";
-    string NavigationMenuCssClass => baseHeaderNavigationClass + (expandHeaderSearch ? " collapse" : "");
+    string NavigationMenuCssClass => baseHeaderNavigationClass + (expandHeaderSearch ? "display" : "");
+
+    string baseHeaderActionClass = "lm-header_actions";
+    string ActionCssClass => baseHeaderActionClass + (expandHeaderSearch ? "display" : "");
 
     void ToggleHeaderSearch()
     {

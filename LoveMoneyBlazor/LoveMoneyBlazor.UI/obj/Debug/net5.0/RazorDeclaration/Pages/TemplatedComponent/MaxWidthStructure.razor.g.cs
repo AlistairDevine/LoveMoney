@@ -132,24 +132,14 @@ using Blazored.LocalStorage;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 136 "C:\Users\Dvine\Documents\GitHub\LoveMoneyV1\LoveMoneyBlazor\LoveMoneyBlazor.UI\Pages\TemplatedComponent\MaxWidthStructure.razor"
+#line 139 "C:\Users\Dvine\Documents\GitHub\LoveMoneyV1\LoveMoneyBlazor\LoveMoneyBlazor.UI\Pages\TemplatedComponent\MaxWidthStructure.razor"
        
     Article[] articles;
-    string scheme = "";
+    string cssHeight = "height: 120px;";
 
     protected override async Task OnInitializedAsync()
     {
         articles = await ArticlesService.GetArticlesAsync();
-    }
-
-    private string SelectTemplate(object article)
-    {
-        var art = (Article)article;
-        if (art.Title.Contains("Save"))
-        {
-            return ModelTemplateCatalog.Get("Alternative");
-        }
-        return ModelTemplateCatalog.Get(article.GetType().Name);
     }
 
     private List<(string, Func<int, object, object>)> AttributeFunctions = new List<(string, Func<int, object, object>)>()
