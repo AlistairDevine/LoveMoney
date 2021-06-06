@@ -13,7 +13,7 @@
       "url": "_content\/AdaptiveCardsBlazor\/styles.css"
     },
     {
-      "hash": "sha256-7WzvMbuv5qMx+c31X9C5dkTb4W7swoOkBJV9Ov+UwYI=",
+      "hash": "sha256-mg5bSThvMJCP5XYq9irAk1NlRXhFB8BrrzVAV+PmA98=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -833,11 +833,11 @@
       "url": "_framework\/dotnet.6.0.0-preview.3.21201.4.js"
     },
     {
-      "hash": "sha256-FUP0kWiEPKN+lkfanmmXBXKOR5yN5D1\/3qgOAyFb0ww=",
+      "hash": "sha256-zkjXl61tq70XegBIZ\/eZCR+TxT2DyLbOOi0p9DZEtCM=",
       "url": "_framework\/LoveMoneyBlazor.UI.dll"
     },
     {
-      "hash": "sha256-2Z\/ijn6\/1BBlL9m\/DJMept7IXrBKvzoo8T3Vcbe\/E\/g=",
+      "hash": "sha256-xinYb6qUlFJSNIrvy\/+pG\/vndnqV\/lSnO2qYKDvJM6Y=",
       "url": "_framework\/LoveMoneyBlazor.UI.pdb"
     },
     {
@@ -1665,6 +1665,10 @@
       "url": "apple-touch-icon57.png"
     },
     {
+      "hash": "sha256-ecrkMpmVCMJqy4yzxEPIVmOBERZaQKnrALbz2u0ADGY=",
+      "url": "apple-touch-icon72.png"
+    },
+    {
       "hash": "sha256-rYPLFjs6KLo8t7JHNcw5AThihrMXcN5IBu8e9SUlRGE=",
       "url": "css\/bootstrap\/bootstrap.min.css"
     },
@@ -1673,7 +1677,7 @@
       "url": "css\/bootstrap\/bootstrap.min.css.map"
     },
     {
-      "hash": "sha256-XFSQfFukyBgNkHWBo+Lm0z6M8yOQ2m9WU\/Zo\/Qjq3gs=",
+      "hash": "sha256-T9gy0bIHTQkAyYKhiZhoECbp\/Enl0fHylpgoL2gyW5U=",
       "url": "css\/main.css"
     },
     {
@@ -1713,7 +1717,7 @@
       "url": "css\/open-iconic\/README.md"
     },
     {
-      "hash": "sha256-hCnKfu++rGnU8p3PZYhbRhSigTDwtoSj2fuqAg79fwk=",
+      "hash": "sha256-eT\/MJN1wgBTp4W5gIoYoqk6dRtGWS8Fgxpse8zwjSaw=",
       "url": "css\/site.css"
     },
     {
@@ -1769,5 +1773,5 @@
       "url": "LoveMoneyBlazor.UI.bundle.scp.css"
     }
   ],
-  "version": "shndPfvW"
+  "version": "FLt2RCnm"
 };

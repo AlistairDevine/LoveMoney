@@ -36,6 +36,7 @@ section {
     position: relative;
 }
 .island {
+    height: 100%;
     background-color: grey;
     padding: 20px;
     z-index: 1;
@@ -144,6 +145,7 @@ section {
     margin: 0;
     list-style: none;
     background: #ffffff;
+    margin: 10px 0;
 }
 
 .feature_item {
@@ -174,4 +176,5 @@ section {
     text-align: center;
     border: 1px solid black;
     background: url(../Images/articleImageFiveSmall.jpg);
+    height: 200px;
 }

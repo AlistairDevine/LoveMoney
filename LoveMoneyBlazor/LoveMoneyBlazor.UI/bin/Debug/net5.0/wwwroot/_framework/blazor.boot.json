@@ -204,11 +204,11 @@
       "mscorlib.dll": "sha256-Fi+LybwHL\/VGD\/09OxxtYlT6exn9xVU+LdojZ9juR2c=",
       "netstandard.dll": "sha256-P8xX0ad1hKyWWbBxiXl3cYokFlDiuXwp3pqoYatH0kk=",
       "System.Private.CoreLib.dll": "sha256-2km83sNUTrumGJYdDzsN8RnJqv00vKWLCCh0UGajTB4=",
-      "LoveMoneyBlazor.UI.dll": "sha256-FUP0kWiEPKN+lkfanmmXBXKOR5yN5D1\/3qgOAyFb0ww="
+      "LoveMoneyBlazor.UI.dll": "sha256-zkjXl61tq70XegBIZ\/eZCR+TxT2DyLbOOi0p9DZEtCM="
     },
     "lazyAssembly": null,
     "pdb": {
-      "LoveMoneyBlazor.UI.pdb": "sha256-2Z\/ijn6\/1BBlL9m\/DJMept7IXrBKvzoo8T3Vcbe\/E\/g="
+      "LoveMoneyBlazor.UI.pdb": "sha256-xinYb6qUlFJSNIrvy\/+pG\/vndnqV\/lSnO2qYKDvJM6Y="
     },
     "runtime": {
       "dotnet.timezones.blat": "sha256-ibxaSjW7s3aLVssChknhzCpgMTHGu4D48Q9OLP3dfe8=",

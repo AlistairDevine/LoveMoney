@@ -4,45 +4,36 @@
         <span class="lm-header_brand-content">
         </span>
     </a>
-    <div class="lm-header-arrow-cont">
-        <ul class="lm-header_brand-select-list">
-            <NavLink class="nav-link" @onclick="@ToggleNavMenu">
-                @if (collapseNavMenu == false)
-                {
-                    <i class="lm-header-arrow-down oi oi-chevron-top"></i>
-                }
-                else
-                {
-                    <i class="lm-header-arrow-down oi oi-chevron-bottom"></i>
-                }
-            </NavLink>
-            <li class="@BrandMenuCssClass" aria-labelledby="navbarDropdown">
-            <li class="lm-header_brand-select-item">
-                <NavLink class="nav-link lm-header_brand-select-link lm-header_brand-select-link--if" href="http://www.lovefood.com">
-                    <span class="lm-header_brand-select-item-link lm-header_brand-select-item-link--if" aria-hidden="true">
-                        Food<i class="lm-header_brand-select-icon lm-header_brand-select-icon--if"></i>
-                    </span>
-                </NavLink>
-            </li>
-            <li class="lm-header_brand-select-item-line"></li>
-            <li class="lm-header_brand-select-item">
-                <NavLink class="nav-link lm-header_brand-select-link lm-header_brand-select-link--le" href="http://www.loveexploring.com">
-                    <span class="lm-header_brand-select-item-link lm-header_brand-select-item-link--le" aria-hidden="true">
-                        Exloping<i class="lm-header_brand-select-icon lm-header_brand-select-icon--le"></i>
-                    </span>
-                </NavLink>
-            </li>
-            <li class="lm-header_brand-select-item-line"></li>
-            <li class="lm-header_brand-select-item">
-                <NavLink class="nav-link lm-header_brand-select-link lm-header_brand-select-link--lp" href="http://www.loveproperty.com">
-                    <span class="lm-header_brand-select-item-link lm-header_brand-select-item-link--lp" aria-hidden="true">
-                        Property<i class="lm-header_brand-select-icon lm-header_brand-select-icon--lp"></i>
-                    </span>
-                </NavLink>
-            </li>
-            </li>
-        </ul>
-    </div>
+        <div class="lm-header-arrow-cont">
+            <ul class="lm-header_brand-select-list">
+                <NavLink class="nav-link" @onclick="@ToggleNavMenu"></NavLink>
+                <li class="@BrandMenuCssClass" aria-labelledby="navbarDropdown">
+                <li class="lm-header_brand-select-item">
+                    <NavLink class="nav-link lm-header_brand-select-link lm-header_brand-select-link--if" href="http://www.lovefood.com">
+                        <span class="lm-header_brand-select-item-link lm-header_brand-select-item-link--if" aria-hidden="true">
+                            Food<i class="lm-header_brand-select-icon lm-header_brand-select-icon--if"></i>
+                        </span>
+                    </NavLink>
+                </li>
+                <li class="lm-header_brand-select-item-line"></li>
+                <li class="lm-header_brand-select-item">
+                    <NavLink class="nav-link lm-header_brand-select-link lm-header_brand-select-link--le" href="http://www.loveexploring.com">
+                        <span class="lm-header_brand-select-item-link lm-header_brand-select-item-link--le" aria-hidden="true">
+                            Exloping<i class="lm-header_brand-select-icon lm-header_brand-select-icon--le"></i>
+                        </span>
+                    </NavLink>
+                </li>
+                <li class="lm-header_brand-select-item-line"></li>
+                <li class="lm-header_brand-select-item">
+                    <NavLink class="nav-link lm-header_brand-select-link lm-header_brand-select-link--lp" href="http://www.loveproperty.com">
+                        <span class="lm-header_brand-select-item-link lm-header_brand-select-item-link--lp" aria-hidden="true">
+                            Property<i class="lm-header_brand-select-icon lm-header_brand-select-icon--lp"></i>
+                        </span>
+                    </NavLink>
+                </li>
+                </li>
+            </ul>
+        </div>
 </div>
 
 @code {

@@ -5,7 +5,7 @@ html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 body {
-    background: url(../LoveMoneyBackground.png);
+    background: #cf6363;
 }
 a:hover {
     color: orangered;
@@ -38,7 +38,7 @@ i.oi:hover, i.oi:active {
     height: 100px;
     padding-top: 18px;
     border-bottom: 4px solid red;
-    background-color: #fff;
+    background-color: #cf6363;
     line-height: 14px;
     font-weight: 700;
     text-align: center;
@@ -54,9 +54,9 @@ i.oi:hover, i.oi:active {
 }
 /*Header brand css*/
 .lm-header_brand {
-    display: block;
-    float: left;
+    display: inline-block;
     height: 54px;
+    width: 50%;
     padding-left: 10px;
 }
 .lm-header_brand-icon {
@@ -66,10 +66,10 @@ i.oi:hover, i.oi:active {
     vertical-align: middle;
 }
 .lm-header-arrow-cont {
+    content: url(../apple-touch-icon72.png);
     display: inline-block;
-    padding: 6px 0 0 0;
-    margin-top: 5px;
     font-size: 18px;
+    float: right;
 }
 .dropdown-menu {
     display: block;
@@ -92,8 +92,8 @@ i.oi:hover, i.oi:active {
 }
 /*Header nav css*/
 .lm-header_nav {
-    float: left;
-    display: block;
+    float: right;
+    display: none;
     opacity: 10;
     animation: 0.5s fade-in ease-out;
 }
@@ -112,6 +112,7 @@ i.oi:hover, i.oi:active {
 }
 .sitenav_list, .subnav_list {
     padding: 0;
+    margin: 10px 0 0 0;
 }
 .sitenav_item {
     display: inline-block;
@@ -132,7 +133,7 @@ i.oi:hover, i.oi:active {
 }
 /*Header actions css*/
 .lm-header_actions {
-    float: right;
+    float: left;
 }
     .lm-header_actionsdisplay {
         left: 100%;
@@ -153,7 +154,7 @@ i.oi:hover, i.oi:active {
     margin-top: 9px;
     margin-right: 25px;
     float: right;
-    border: 2px solid black;
+    border: 2px dashed black;
 }
 .search-btn_icon {
     height: 36px;
@@ -175,11 +176,11 @@ i.oi:hover, i.oi:active {
         transition: 0.5s opacity ease-out;
     }
 .lm-account_signin {
-    display: block;
-    padding: 24px 20px;
+    padding: 24px 40px;
     margin-right: 10px;
     color: #000000;
-    font-size: 10px;
+    font-size: 14px;
+    font-weight: 700;
     line-height: 10px;
     max-width: 100%;
 }
@@ -253,26 +254,30 @@ nav {
     z-index: 20;
 }
 .subnav {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
     opacity: 1;
     transform: translateX(0) translateY(0);
     visibility: visible;
     z-index: 9;
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 200px;
+    width: 250px;
+    height: 100%;
     background: #ffffff;
     padding: 5px 10px 10px;
     background-color: #ffffff;
     box-shadow: rgb(0 0 0 / 34%) 0 3px 5px 0;
-    left: 50%;
-    transform: translateX(-50%);
+    position: static;
     animation: 0.5s fade-in ease-out;
     transition: 0.5s opacity ease-out;
 }
 .subnav_cont {
-    margin: auto;
     position: relative;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    align-content: space-around;
+    flex-basis: auto;
 }
 .subnav_item {
     display: inline-block;
@@ -325,14 +330,6 @@ nav {
     float: none;
     text-align: left;
 }
-.column {
-    float: left;
-    width: 100%;
-    padding: 5px 5px 0px 5px;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-}
 
 /*
     Topics Page navigation menu css
@@ -342,19 +339,20 @@ nav {
 }
 .page-nav_wrapper {
     background: #ffffff;
+    width: 100%;
     border-bottom: 1px solid #000000;
     position: relative;
     display: flex;
     justify-content: center;
 }
 .page-nav_content {
-    padding: 22px 0px;
+    padding: 11px 0px;
 }
 .ps-container {
     overflow: hidden;
 }
 .page-nav_body-wrapper {
-    width: 980px;
+    
 }
 .page-nav_body {
     margin: 0 auto;
@@ -366,9 +364,9 @@ nav {
     padding: 15px 5px;
     margin: -15px 0;
     text-align: center;
-    width: 94px;
+    font-style: italic;
+    width: 115px;
     vertical-align: middle;
-    border-left: 1px solid #000000;
     line-height: 10px;
     display: inline-block;
 }
@@ -385,8 +383,8 @@ nav {
 /*Header Search bar css*/
 .top-search-header {
     position: absolute;
-    right: 140px;
-    width: 45%;
+    left: 140px;
+    width: 30%;
     display: inline-block;
     animation: 0.5s fade-in ease-out;
     transition: transform 0.5s opacity ease-out;
@@ -417,3 +415,12 @@ nav {
     height: 34px;
     box-shadow: none;
 }
+
+
+/*New changes*/
+.lm-header_sideMenu {
+    float: left;
+}
+    .lm-header_sideMenudisplay {
+        float: left;
+    }

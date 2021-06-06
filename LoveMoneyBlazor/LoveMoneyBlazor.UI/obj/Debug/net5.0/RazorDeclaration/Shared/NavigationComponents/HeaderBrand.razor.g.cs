@@ -132,7 +132,7 @@ using Blazored.LocalStorage;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 48 "C:\Users\Dvine\Documents\GitHub\LoveMoneyV1\LoveMoneyBlazor\LoveMoneyBlazor.UI\Shared\NavigationComponents\HeaderBrand.razor"
+#line 39 "C:\Users\Dvine\Documents\GitHub\LoveMoneyV1\LoveMoneyBlazor\LoveMoneyBlazor.UI\Shared\NavigationComponents\HeaderBrand.razor"
        
     bool collapseNavMenu = true;
 

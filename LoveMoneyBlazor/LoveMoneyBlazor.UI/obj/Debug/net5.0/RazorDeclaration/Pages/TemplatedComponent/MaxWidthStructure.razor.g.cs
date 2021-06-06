@@ -132,10 +132,9 @@ using Blazored.LocalStorage;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 139 "C:\Users\Dvine\Documents\GitHub\LoveMoneyV1\LoveMoneyBlazor\LoveMoneyBlazor.UI\Pages\TemplatedComponent\MaxWidthStructure.razor"
+#line 141 "C:\Users\Dvine\Documents\GitHub\LoveMoneyV1\LoveMoneyBlazor\LoveMoneyBlazor.UI\Pages\TemplatedComponent\MaxWidthStructure.razor"
        
     Article[] articles;
-    string cssHeight = "height: 120px;";
 
     protected override async Task OnInitializedAsync()
     {

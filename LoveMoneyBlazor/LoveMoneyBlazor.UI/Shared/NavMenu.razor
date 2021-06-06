@@ -1,82 +1,81 @@
-﻿<!--Header-->
+﻿<!--Financial Times Design influence : https://www.ft.com-->
+
+<!--Header-->
 <nav id="header-module" class="">
 
     <header class="lm-header">
         <div class="lm-header_cont">
+            <!--SubNavigation menu-->
+            <div class="@SideSubNavCssClass">
+                <a class="menu-btn">
+                    <i class="menu-btn_icon oi oi-menu" @onclick="ToggleSideSubMenu"></i>
+                </a>
+            </div>
+
+            <!--Header Actions-->
+            <div class="@baseHeaderActionClass">
+                <a class="menu-btn js-trigger--mobinav">
+                    <i class="menu-btn_icon"></i>
+                </a>
+                <!--search-btn class to a tag-->
+                <a class="search-btn">
+                    @if (expandHeaderSearch)
+                    {
+                        <i class="search-btn_icon oi oi-x" @onclick="ToggleHeaderSearch"></i>
+                    }
+                    else
+                    {
+                        <i class="search-btn_icon oi oi-magnifying-glass" @onclick="ToggleHeaderSearch"></i>
+                    }
+                </a>
+            </div>
+
+            <!--Header search bar component-->
+            <section class="@TopSearchCssClass">
+                <div class="top-search_fieldset">
+                    <buton class="top-search_submit" type="submit">
+                        <i class="top-search_icon"></i>
+                    </buton>
+                    <input class="top-search_input" type="text" placeholder="Search lovemoney" />
+                </div>
+            </section>
+
             <!--Header Brand-->
             <HeaderBrand />
 
-            <div class="lm-header_adjustable">
-                <!--Header Navigation-->
-                <div class="@NavigationMenuCssClass">
-                    <nav class="sitenav">
-                        <ul class="sitenav_list">
-                            <li class="sitenav_item">
-                                <a class="sitenav_link" href="/News">
-                                    News
-                                </a>
-                            </li>
-                            <li class="sitenav_item">
-                                <span class="sitenav_link sitenav_link-text compare" @onmouseover="ToggleHeaderSubNav" @onmouseout="ToggleHeaderSubNav">
-                                    Compare
-                                </span>
-                            </li>
-                            <li class="sitenav_item">
-                                <a class="sitenav_link" href="/QandA">
-                                    Q & A
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-
-                <!--Header Account-->
-                <div class="@AccountMenuCssClass">
-                    <a class="lm-account_signin" href="https://www.loveincorporated.com/">
-                        | sign in |
-                    </a>
-                </div>
-
-                <!--Header Actions-->
-                <div class="@ActionCssClass">
-                    <a class="menu-btn js-trigger--mobinav">
-                        <i class="menu-btn_icon"></i>
-                    </a>
-                    <!--search-btn class to a tag-->
-                    <a class="search-btn">
-                        @if (expandHeaderSearch)
-                        {
-                            <i class="search-btn_icon oi oi-x" @onclick="ToggleHeaderSearch"></i>
-                        }
-                        else
-                        {
-                            <i class="search-btn_icon oi oi-magnifying-glass" @onclick="ToggleHeaderSearch"></i>
-                        }
-                    </a>
-                </div>
-
-                <!--Header search bar component-->
-                <section class="@TopSearchCssClass">
-                    <div class="top-search_fieldset">
-                        <buton class="top-search_submit" type="submit">
-                            <i class="top-search_icon"></i>
-                        </buton>
-                        <input class="top-search_input" type="text" placeholder="Search lovemoney" />
-                    </div>
-                </section>
+            <!--Header Navigation-->
+            <div class="@baseHeaderNavigationClass">
+                <nav class="sitenav">
+                    <ul class="sitenav_list">
+                        <li class="sitenav_item">
+                            <a class="sitenav_link" href="/News">
+                                News
+                            </a>
+                        </li>
+                        <li class="sitenav_item">
+                            <span class="sitenav_link sitenav_link-text compare">
+                                Compare
+                            </span>
+                        </li>
+                        <li class="sitenav_item">
+                            <a class="sitenav_link" href="/QandA">
+                                Q & A
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
+
         </div>
     </header>
     @if (expandSubNav)
     {
         <!--Compare hover sub-navigation menu-->
-        <section class="subnav-wrapper" @onmouseover="ToggleHeaderSubNav" @onmouseout="ToggleHeaderSubNav">
+        <section class="subnav-wrapper">
             <nav class="subnav">
                 <div class="subnav_cont">
                     <ul class="subnav_list">
                         <!--Subnav item, 9-->
-                        <!--new column-->
-                        <li class="column">
                             <!--Credit cards-->
                         <li class="subnav_item">
                             <a class="subnav_link" href="/creditcards" @onmouseover="() => expandCreditCardsNav = !expandCreditCardsNav" @onmouseout="() => expandCreditCardsNav = false">
@@ -161,35 +160,25 @@
                             <a class="subnav_link" href="/savings">
                                 Savings <i class="subnav_icon"></i>
                             </a>
-                            <div class="subcentre"></div>
                         </li>
-                        </li>
-                        <!--new column-->
-                        <li class="column">
                             <!--Current Accounts-->
                             <p class="subnav_item">
                                 <a class="subnav_link" href="/currentaccounts">
                                     Current Accounts <i class="subnav_icon"></i>
                                 </a>
-                                <div class="subcentre"></div>
                             </p>
                             <!--Mortgages-->
                             <p class="subnav_item">
                                 <a class="subnav_link" href="/mortgages">
                                     Mortgages <i class="subnav_icon"></i>
                                 </a>
-                                <div class="subcentre"></div>
                             </p>
                             <!--Utilties-->
                             <p class="subnav_item">
                                 <a class="subnav_link" href="/utilities">
                                     Utilities <i class="subnav_icon"></i>
                                 </a>
-                                <div class="subcentre"></div>
                             </p>
-                        </li>
-                        <!--new column-->
-                        <li class="column">
                             <!--Insurance-->
                         <li class="subnav_item">
                             <a class="subnav_link" href="/insurance" @onmouseover="() => expandInsuranceNav = !expandInsuranceNav" @onmouseout="() => expandInsuranceNav = false">
@@ -235,7 +224,6 @@
                                 </div>
                             }
                         </li>
-                        </li>
                     </ul>
                 </div>
             </nav>
@@ -259,20 +247,24 @@
     string baseTopSearchClass = "top-search-header";
     string TopSearchCssClass => baseTopSearchClass + (expandHeaderSearch ? "" : "display");
 
-    string baseHeaderAccountClass = "lm-header_account";
-    string AccountMenuCssClass => baseHeaderAccountClass + (expandHeaderSearch ? "display" : "");
-
     string baseHeaderNavigationClass = "lm-header_nav";
-    string NavigationMenuCssClass => baseHeaderNavigationClass + (expandHeaderSearch ? "display" : "");
+    //string NavigationMenuCssClass => baseHeaderNavigationClass + (expandHeaderSearch ? "display" : "");
 
     string baseHeaderActionClass = "lm-header_actions";
-    string ActionCssClass => baseHeaderActionClass + (expandHeaderSearch ? "display" : "");
+    //string ActionCssClass => baseHeaderActionClass + (expandHeaderSearch ? "display" : "");
+
+    string baseHeaderSubSideNavigation = "lm-header_sideMenu";
+    string SideSubNavCssClass => baseHeaderSubSideNavigation + (expandHeaderSearch ? "display" : "");
 
     void ToggleHeaderSearch()
     {
         expandHeaderSearch = !expandHeaderSearch;
     }
     void ToggleHeaderSubNav()
+    {
+        expandSubNav = !expandSubNav;
+    }
+    void ToggleSideSubMenu()
     {
         expandSubNav = !expandSubNav;
     }

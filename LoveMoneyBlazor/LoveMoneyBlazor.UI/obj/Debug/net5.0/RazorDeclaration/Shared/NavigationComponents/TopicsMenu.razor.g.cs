@@ -131,6 +131,14 @@ using Blazored.LocalStorage;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 67 "C:\Users\Dvine\Documents\GitHub\LoveMoneyV1\LoveMoneyBlazor\LoveMoneyBlazor.UI\Shared\NavigationComponents\TopicsMenu.razor"
+       
+    string baseHeaderAccountClass = "lm-header_account";
+
+#line default
+#line hidden
+#nullable disable
     }
 }
 #pragma warning restore 1591

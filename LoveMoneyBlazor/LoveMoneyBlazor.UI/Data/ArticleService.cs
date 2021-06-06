@@ -33,7 +33,7 @@ namespace LoveMoneyBlazor.Data
         public Task<Article[]> GetArticlesAsync()
         {
             var rng = new Random();
-            return Task.FromResult(Enumerable.Range(1, 6).Select(index => new Article
+            return Task.FromResult(Enumerable.Range(1, 4).Select(index => new Article
             {
                 Title = Characters[rng.Next(Characters.Length)],
                 Subheading = Characters[rng.Next(Characters.Length)],

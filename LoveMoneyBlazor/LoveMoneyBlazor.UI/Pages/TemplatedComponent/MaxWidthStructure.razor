@@ -26,6 +26,23 @@
                                 </article>
                                 <span class="feature_outline"></span>
                             </a>
+                            <!--Adaptive Cards-->
+                            <!--TODO : Place inside a templated component for reusability-->
+                            <section>
+                                <div class="main_wrapper">
+                                    <div class="main_island">
+                                        <div class="main_content">
+                                            <div class="main_content_item">
+                                                @if (AttributeFunctions.Count == 1)
+                                                {
+                                                    <CardCollection Schema="@Schemas.Picture" CardClass="col-3" Models="@articles" CardAttributeFunctions="AttributeFunctions" @onclick="SearchArticle"></CardCollection>
+                                                }
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
                             <ul class="feature_item-wrapper">
                                 <li class="feature_item u-1/3-desk u-1/1-lap u-1/1-palm">
                                     <article>
@@ -119,26 +136,10 @@
         </section>
     </div>
 </section>
-<!--TODO : Place inside a templated component for reusability-->
-<section>
-    <div class="main_wrapper">
-        <div class="main_island">
-            <div class="main_content">
-                <div class="main_content_item">
-                    @if (AttributeFunctions.Count == 1)
-                    {
-                        <CardCollection Schema="@Schemas.Picture" CardClass="col-6" Models="@articles" CardAttributeFunctions="AttributeFunctions" @onclick="SearchArticle" style="@cssHeight"></CardCollection>
-                    }
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
 
 @code {
     Article[] articles;
-    string cssHeight = "height: 120px;";
 
     protected override async Task OnInitializedAsync()
     {
