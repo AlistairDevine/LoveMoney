@@ -48,9 +48,6 @@
                                     <article>
                                         <a class="feature_item-link" href="/news/111407/investing-risk-savings-rates-stock-market-returns">
                                             <span class="flag flag-rev">
-                                                <span class="flag_img">
-                                                    <i class="subnav_icon icon-news-arrow-right"></i>
-                                                </span>
                                                 <span class="flag_body">
                                                     <span class="feature_item-title">
                                                         Why not investing is the riskier move
@@ -64,9 +61,6 @@
                                     <article>
                                         <a class="feature_item-link" href="/news/111407/investing-risk-savings-rates-stock-market-returns">
                                             <span class="flag flag-rev">
-                                                <span class="flag_img">
-                                                    <i class="subnav_icon icon-news-arrow-right"></i>
-                                                </span>
                                                 <span class="flag_body">
                                                     <span class="feature_item-title">
                                                         Why not investing is the riskier move
@@ -80,9 +74,6 @@
                                     <article>
                                         <a class="feature_item-link" href="/news/111407/investing-risk-savings-rates-stock-market-returns">
                                             <span class="flag flag-rev">
-                                                <span class="flag_img">
-                                                    <i class="subnav_icon icon-news-arrow-right"></i>
-                                                </span>
                                                 <span class="flag_body">
                                                     <span class="feature_item-title">
                                                         Why not investing is the riskier move
@@ -134,12 +125,41 @@
                 </section>
             </div>
         </section>
+        <section>
+            <div class="grid-adaptive">
+                <div class="grid-adaptive-leftside">
+                    <div class="grid-adaptive_article">
+                        <TemplatedAdaptiveCard class="articleIndex1" Model="@article" Schema="@Schemas.ImageGallery"></TemplatedAdaptiveCard>
+                    </div>
+                    <div class="grid-adaptive_article-double">
+                        <TemplatedAdaptiveCard class="articleIndex2" Model="@article" Schema="@Schemas.Agenda"></TemplatedAdaptiveCard>
+                    </div>
+                </div>
+                <div class="grid-adaptive-rightside-list">
+                    <ul class="grid-adaptive_item-wrapper">
+                        <li class="articleList1">
+                            <TemplatedAdaptiveCard Model="@article" Schema="@Schemas.ImageGallery"></TemplatedAdaptiveCard>
+                        </li>
+                        <li class="articleList2">
+                            <TemplatedAdaptiveCard Model="@article" Schema="@Schemas.ImageGallery"></TemplatedAdaptiveCard>
+                        </li>
+                        <li class="articleList3">
+                            <TemplatedAdaptiveCard Model="@article" Schema="@Schemas.ImageGallery"></TemplatedAdaptiveCard>
+                        </li>
+                        <li class="articleList4">
+                            <TemplatedAdaptiveCard Model="@article" Schema="@Schemas.ImageGallery"></TemplatedAdaptiveCard>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </div>
 </section>
 
 
 @code {
     Article[] articles;
+    Article article;
 
     protected override async Task OnInitializedAsync()
     {
@@ -148,7 +168,7 @@
 
     private List<(string, Func<int, object, object>)> AttributeFunctions = new List<(string, Func<int, object, object>)>()
     {
-        ("card-index", (i, model) => i.ToString())
+        ("card-feature-index", (i, model) => i.ToString())
     };
 
     void SearchArticle()

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "yIB5g5oDvAmelLUYldgvS9liEeqddlawPzhyia3+KgtvSUcCc2GUqbxma48VFAhtH+ikc/zEb4ibltKL190G3w==",
+  "dgSpecHash": "JJzQGgV9ErxJXNnVoRhO55q+FPZ+cAf2DfR4an7FMMQDHT36qExPNn2Shc7FavDVP9OTh9X/zNn5bFuhxbdQtg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Dvine\\Documents\\GitHub\\LoveMoneyV1\\LoveMoneyBlazor\\LoveMoneyBlazor.UI\\LoveMoneyBlazor.UI.csproj",
   "expectedPackageFiles": [
@@ -132,7 +132,7 @@
     "C:\\Users\\Dvine\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\Dvine\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\Dvine\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\Dvine\\.nuget\\packages\\microsoft.netcore.app.runtime.browser-wasm\\5.0.4\\microsoft.netcore.app.runtime.browser-wasm.5.0.4.nupkg.sha512"
+    "C:\\Users\\Dvine\\.nuget\\packages\\microsoft.netcore.app.runtime.browser-wasm\\5.0.5\\microsoft.netcore.app.runtime.browser-wasm.5.0.5.nupkg.sha512"
   ],
   "logs": []
 }

@@ -23,7 +23,6 @@ namespace LoveMoneyBlazor.Data
         {
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNRBAdc9vPXuKSEcuwKaL_WpenULaH6xksPw&usqp=CAU",
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7-ctxA2sjzfFhZkRfrCAJKqw8SebLyj0rtQ&usqp=CAU",
-            "https://lh3.googleusercontent.com/proxy/flYAyzRUfd_yhB_gHuLUx7Q-eTLGXFq-Tni2gEmbCKU0HLAIppUcK9yd6NjHV_3OIP0sbjrMv7eP1E_YIm9FvdKUApHxVZEK7UN5EgnSGSovI-qBffY"
         };
         private static readonly string[] Descriptions = new[]
         {

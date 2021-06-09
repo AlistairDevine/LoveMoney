@@ -13,7 +13,7 @@
       "url": "_content\/AdaptiveCardsBlazor\/styles.css"
     },
     {
-      "hash": "sha256-mg5bSThvMJCP5XYq9irAk1NlRXhFB8BrrzVAV+PmA98=",
+      "hash": "sha256-5CoVldzHyPJyLSFjOquZmbCqrS7NlP5i28en999Muo8=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -833,11 +833,11 @@
       "url": "_framework\/dotnet.6.0.0-preview.3.21201.4.js"
     },
     {
-      "hash": "sha256-zkjXl61tq70XegBIZ\/eZCR+TxT2DyLbOOi0p9DZEtCM=",
+      "hash": "sha256-O4ELnAcWDw2+G9pdjvM1XudeWlusMf+db4KiTWUq1eU=",
       "url": "_framework\/LoveMoneyBlazor.UI.dll"
     },
     {
-      "hash": "sha256-xinYb6qUlFJSNIrvy\/+pG\/vndnqV\/lSnO2qYKDvJM6Y=",
+      "hash": "sha256-iTfZnasVR36BSs+k3x1FUl0aHLnEsRUc\/Q6gWCVgC34=",
       "url": "_framework\/LoveMoneyBlazor.UI.pdb"
     },
     {
@@ -1677,7 +1677,7 @@
       "url": "css\/bootstrap\/bootstrap.min.css.map"
     },
     {
-      "hash": "sha256-T9gy0bIHTQkAyYKhiZhoECbp\/Enl0fHylpgoL2gyW5U=",
+      "hash": "sha256-UEjywfkkOzcN+qH6LeCFh5\/RdcelUSlPPqnbrUnGs+M=",
       "url": "css\/main.css"
     },
     {
@@ -1717,8 +1717,12 @@
       "url": "css\/open-iconic\/README.md"
     },
     {
-      "hash": "sha256-eT\/MJN1wgBTp4W5gIoYoqk6dRtGWS8Fgxpse8zwjSaw=",
+      "hash": "sha256-U4NEtFmZNvcMJJIXZ\/pwXmveKlDh8l1I1pJEpM+PFrk=",
       "url": "css\/site.css"
+    },
+    {
+      "hash": "sha256-+emVVXu2m4qeiU3j37VDrLKGuHbhVTul9XBMl9x1k\/M=",
+      "url": "edited-icon-72.png"
     },
     {
       "hash": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=",
@@ -1773,5 +1777,5 @@
       "url": "LoveMoneyBlazor.UI.bundle.scp.css"
     }
   ],
-  "version": "FLt2RCnm"
+  "version": "TvbGTbM\/"
 };

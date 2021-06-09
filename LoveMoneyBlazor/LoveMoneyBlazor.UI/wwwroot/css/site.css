@@ -1,11 +1,9 @@
-* {
-    color: #000;
-}
+
 html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 body {
-    background: #cf6363;
+    background: #525252;
 }
 a:hover {
     color: orangered;
@@ -38,12 +36,13 @@ i.oi:hover, i.oi:active {
     height: 100px;
     padding-top: 18px;
     border-bottom: 4px solid red;
-    background-color: #cf6363;
+    background-color: #525252;
     line-height: 14px;
     font-weight: 700;
     text-align: center;
     letter-spacing: 1px;
     text-transform: uppercase;
+    color: white;
 }
 .lm-header_cont {
     height: 60px;
@@ -66,7 +65,7 @@ i.oi:hover, i.oi:active {
     vertical-align: middle;
 }
 .lm-header-arrow-cont {
-    content: url(../apple-touch-icon72.png);
+    content: url(../edited-icon-72.png);
     display: inline-block;
     font-size: 18px;
     float: right;
@@ -122,7 +121,7 @@ i.oi:hover, i.oi:active {
 .sitenav_link {
     display: inline-block;
     padding: 20px;
-    color: #000000;
+    color: red;
 }
 
 .sitenav_link-text {
@@ -178,7 +177,7 @@ i.oi:hover, i.oi:active {
 .lm-account_signin {
     padding: 24px 40px;
     margin-right: 10px;
-    color: #000000;
+    color: #ffffff;
     font-size: 14px;
     font-weight: 700;
     line-height: 10px;
@@ -263,9 +262,8 @@ nav {
     z-index: 9;
     width: 250px;
     height: 100%;
-    background: #ffffff;
+    background: rgb(82 82 82 / 0.80);
     padding: 5px 10px 10px;
-    background-color: #ffffff;
     box-shadow: rgb(0 0 0 / 34%) 0 3px 5px 0;
     position: static;
     animation: 0.5s fade-in ease-out;
@@ -303,7 +301,7 @@ nav {
     border-bottom: 1px solid grey;
     transition: color 200ms ease;
     -webkit-transition: color 200ms ease;
-    color: #000000;
+    color: #ffffff;
 }
 .subnav_icon {
     font-family: Icons;
@@ -316,7 +314,7 @@ nav {
     color: darkred;
 }
 .subcentre {
-    background: #ffffff;
+    background: #525252;
     padding-top: 15px;
     position: absolute;
     z-index: 12;
@@ -344,6 +342,7 @@ nav {
     position: relative;
     display: flex;
     justify-content: center;
+    background: #525252;
 }
 .page-nav_content {
     padding: 11px 0px;
@@ -378,7 +377,7 @@ nav {
     font-weight: 700;
     font-size: 11px;
     line-height: 16px;
-    color: #333333;
+    color: #ffffff;
 }
 /*Header Search bar css*/
 .top-search-header {
@@ -405,6 +404,7 @@ nav {
 }
 .top-search_fieldset input[type=text], .top-search_submit {
     background-color: transparent;
+    color: #ffffff;
     border: none;
     padding: 5px;
 }

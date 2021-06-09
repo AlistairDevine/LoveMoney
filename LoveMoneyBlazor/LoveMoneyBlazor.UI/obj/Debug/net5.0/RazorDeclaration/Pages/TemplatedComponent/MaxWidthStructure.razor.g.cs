@@ -132,9 +132,10 @@ using Blazored.LocalStorage;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 141 "C:\Users\Dvine\Documents\GitHub\LoveMoneyV1\LoveMoneyBlazor\LoveMoneyBlazor.UI\Pages\TemplatedComponent\MaxWidthStructure.razor"
+#line 160 "C:\Users\Dvine\Documents\GitHub\LoveMoneyV1\LoveMoneyBlazor\LoveMoneyBlazor.UI\Pages\TemplatedComponent\MaxWidthStructure.razor"
        
     Article[] articles;
+    Article article;
 
     protected override async Task OnInitializedAsync()
     {
@@ -143,7 +144,7 @@ using Blazored.LocalStorage;
 
     private List<(string, Func<int, object, object>)> AttributeFunctions = new List<(string, Func<int, object, object>)>()
     {
-        ("card-index", (i, model) => i.ToString())
+        ("card-feature-index", (i, model) => i.ToString())
     };
 
     void SearchArticle()

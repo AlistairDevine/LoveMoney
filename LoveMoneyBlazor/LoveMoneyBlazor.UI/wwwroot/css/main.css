@@ -37,7 +37,7 @@ section {
 }
 .island {
     height: 100%;
-    background-color: grey;
+    background-color: #2e2e2e;
     padding: 20px;
     z-index: 1;
 }
@@ -71,16 +71,16 @@ section {
 .feature_main-img, .news-tile_img {
     height: 100%;
     width: 100%;
-    background-position: 50% 50%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    /*TODO : Not working correctly*/
-    background: url(../Images/articleBanner.png);
 }
 .feature_body {
     position: relative;
     width: 100%;
     z-index: 1;
+    display: block;
+    background-image: url("../Images/articleBanner.png");
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .feature_body, .feature_main-img {
     padding: 120px 0 20px;
@@ -123,6 +123,8 @@ section {
 }
 .feature_main-title-wrapper {
     box-shadow: 10px 0 rgb(255 255 255 / 60%);
+    color: #000000;
+    font-weight: 700;
 }
 .feature_cat, .feature_main-title-wrapper {
     display: inline-block;
@@ -143,13 +145,19 @@ section {
 }
 .feature_item-wrapper {
     margin: 0;
+    padding: 0;
     list-style: none;
     background: #ffffff;
     margin: 10px 0;
+    text-align: center;
 }
 
 .feature_item {
     padding: 20px;
+    color: #000000;
+}
+.feature_item-title {
+    color: #000000;
 }
 .flag_body {
     margin-bottom: 0;
@@ -160,6 +168,13 @@ section {
 }
 .news-tile_body {
     height: 120px;
+}
+.news-tile_body, .news-tile_img {
+    display: block;
+    background-image: url("../Images/articleImageThreeSmall.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 /*Second part of main container*/
 .grid {
@@ -176,5 +191,29 @@ section {
     text-align: center;
     border: 1px solid black;
     background: url(../Images/articleImageFiveSmall.jpg);
+    overflow: hidden;
+    width: 200px;
+}
+.main_content_item .ac-adaptivecard {
     height: 200px;
+}
+.grid-adaptive {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.grid-adaptive-leftside {
+    width: 50%;
+}
+.grid-adaptive-rightside-list {
+    float: right;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+.articleList2  .ac-adaptivecard{
+    height: 150px;
+}
+.grid-adaptive_item-wrapper {
+    list-style: none;
 }
