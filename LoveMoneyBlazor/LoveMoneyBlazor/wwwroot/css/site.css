@@ -342,6 +342,8 @@ nav {
     background: darkred;
     padding: 10px 0;
     position: relative;
+    display: flex;
+    justify-content: center;
     animation: 1.5s fade-in ease-out;
     transition: 1.5s opacity ease-out;
 }
