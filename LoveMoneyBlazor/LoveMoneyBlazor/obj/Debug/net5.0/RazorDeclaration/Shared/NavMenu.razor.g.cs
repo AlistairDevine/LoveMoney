@@ -118,10 +118,11 @@ using AdaptiveCards.Blazor;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 248 "C:\Users\Dvine\Documents\GitHub\LoveMoneyV1\LoveMoneyBlazor\LoveMoneyBlazor\Shared\NavMenu.razor"
+#line 255 "C:\Users\Dvine\Documents\GitHub\LoveMoneyV1\LoveMoneyBlazor\LoveMoneyBlazor\Shared\NavMenu.razor"
        
     bool expandHeaderSearch = false;
     bool expandSubNav = false;
+    bool collapseTopicMenu = true;
 
     //Sub-navigation menu hover features
     private bool expandCreditCardsNav;
@@ -138,6 +139,9 @@ using AdaptiveCards.Blazor;
     string baseHeaderNavigationClass = "lm-header_nav";
     string NavigationMenuCssClass => baseHeaderNavigationClass + (expandHeaderSearch ? " collapse" : "");
 
+    string baseTopicMenuClass = "dropdown-menu";
+    string TopicMenuCssClass => baseTopicMenuClass + (collapseTopicMenu ? " collapse" : "");
+
     void ToggleHeaderSearch()
     {
         expandHeaderSearch = !expandHeaderSearch;
@@ -145,6 +149,10 @@ using AdaptiveCards.Blazor;
     void ToggleHeaderSubNav()
     {
         expandSubNav = !expandSubNav;
+    }
+    void ToggleTopicMenu()
+    {
+        collapseTopicMenu = !collapseTopicMenu;
     }
 
 #line default

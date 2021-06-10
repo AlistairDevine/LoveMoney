@@ -19,6 +19,9 @@ a:hover {
 span.compare:hover, span.compare:active {
     color: orangered;
 }
+span.topicsSubMenu:hover, span.topicsSubMenu:active {
+    color: orangered;
+}
 a.search-btn:hover, a.search-btn:active {
     border: 2px solid orangered;
 }
@@ -37,8 +40,7 @@ i.oi:hover, i.oi:active {
     z-index: 10;
     height: 100px;
     padding-top: 18px;
-    border-bottom: 4px solid red;
-    background-color: #fff;
+    background-color: darkred;
     line-height: 14px;
     font-weight: 700;
     text-align: center;
@@ -47,6 +49,7 @@ i.oi:hover, i.oi:active {
 }
 .lm-header_cont {
     height: 60px;
+    margin: 0 15%;
 }
 /*Header brand css*/
 .lm-header_brand {
@@ -68,6 +71,7 @@ i.oi:hover, i.oi:active {
     font-size: 18px;
 }
 .dropdown-menu {
+    /*TODO : dropdown menu name change, clash with inprinted scss setting */
     display: block;
     opacity: 10;
     animation: 0.5s fade-in ease-out;
@@ -88,7 +92,7 @@ i.oi:hover, i.oi:active {
 }
 /*Header nav css*/
 .lm-header_nav {
-    float: left;
+    float: right;
     display: block;
     opacity: 10;
     animation: 0.5s fade-in ease-out;
@@ -117,9 +121,8 @@ i.oi:hover, i.oi:active {
 .sitenav_link {
     display: inline-block;
     padding: 20px;
-    color: #000000;
+    color: #ffffff;
 }
-
 .sitenav_link-text {
     cursor: default;
 }
@@ -127,18 +130,8 @@ i.oi:hover, i.oi:active {
     height: 80px;
 }
 /*Header actions css*/
-.lm-header_account {
-    display: inline-block;
-    opacity: 10;
-    animation: 0.5s fade-in ease-out;
-}
-    .lm-header_account collapse {
-        display: none;
-        opacity: 0;
-        transition: 0.5s opacity ease-out;
-    }
 .lm-header_actions {
-    float: right;
+    float: left;
 }
 .menu-btn {
     float: right;
@@ -155,7 +148,7 @@ i.oi:hover, i.oi:active {
     margin-top: 9px;
     margin-right: 25px;
     float: right;
-    border: 2px solid black;
+    border: 2px dotted #ffffff;
 }
 .search-btn_icon {
     height: 36px;
@@ -166,11 +159,24 @@ i.oi:hover, i.oi:active {
     opacity: 1;
 }
 /*Header account css*/
+.lm-header_account {
+    display: inline-block;
+    opacity: 10;
+    animation: 0.5s fade-in ease-out;
+    float: right;
+}
+
+    .lm-header_account collapse {
+        display: none;
+        opacity: 0;
+        transition: 0.5s opacity ease-out;
+    }
 .lm-account_signin {
     display: block;
+    float: right;
     padding: 24px 20px;
     margin-right: 10px;
-    color: #000000;
+    color: #ffffff;
     font-size: 10px;
     line-height: 10px;
     max-width: 100%;
@@ -191,14 +197,14 @@ i.oi:hover, i.oi:active {
     padding: 0 17px 17px;
 }
 .lm-header_brand-select-list {
-    padding-left: 0;
+    padding: 0;
     overflow: hidden;
 }
 .lm-header_brand-select-item-line {
     border-bottom: 1px solid rgba(0, 0, 0, .2);
 }
 .lm-header_brand-select-link {
-    color: #000000;
+    color: #ffffff;
 }
 .lm-header_brand-select-item-link {
     padding-right: 10px;
@@ -255,7 +261,7 @@ nav {
     height: 200px;
     background: #ffffff;
     padding: 5px 10px 10px;
-    background-color: #ffffff;
+    background-color: darkred;
     box-shadow: rgb(0 0 0 / 34%) 0 3px 5px 0;
     left: 50%;
     transform: translateX(-50%);
@@ -290,7 +296,7 @@ nav {
     border-bottom: 1px solid grey;
     transition: color 200ms ease;
     -webkit-transition: color 200ms ease;
-    color: #000000;
+    color: #ffffff;
 }
 .subnav_icon {
     font-family: Icons;
@@ -333,9 +339,11 @@ nav {
     text-decoration: none;
 }
 .page-nav_wrapper {
-    background: #ffffff;
-    border-bottom: 1px solid #000000;
+    background: darkred;
+    padding: 10px 0;
     position: relative;
+    animation: 1.5s fade-in ease-out;
+    transition: 1.5s opacity ease-out;
 }
 .page-nav_content {
     padding: 22px 0px;
@@ -344,13 +352,12 @@ nav {
     overflow: hidden;
 }
 .page-nav_body-wrapper {
-    width: 980px;
+    width: 100%;
 }
 .page-nav_body {
     margin: 0 auto;
     font-size: 0;
     overflow: hidden;
-    float: left;
 }
 .page-nav_item {
     padding: 15px 5px;
@@ -358,7 +365,7 @@ nav {
     text-align: center;
     width: 94px;
     vertical-align: middle;
-    border-left: 1px solid #000000;
+    border-left: 1px solid orangered;
     line-height: 10px;
     display: inline-block;
 }
@@ -370,13 +377,13 @@ nav {
     font-weight: 700;
     font-size: 11px;
     line-height: 16px;
-    color: #333333;
+    color: #ffffff;
 }
 /*Header Search bar css*/
 .top-search-header {
     position: absolute;
-    right: 140px;
-    width: 450px;
+    right: 25%;
+    width: 500px;
     display: inline-block;
     animation: 0.5s fade-in ease-out;
     transition: transform 0.5s opacity ease-out;
@@ -386,7 +393,7 @@ nav {
     display: none;
 }
 .top-search_fieldset {
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid #ffffff;
     height: 34px;
     margin-top: 10px;
 }
@@ -402,8 +409,17 @@ nav {
 }
 .top-search_fieldset input[type=text] {
     font-size: 16px;
+    color: #ffffff;
     line-height: 1em;
     width: 100%;
     height: 34px;
     box-shadow: none;
+}
+
+/*New changes*/
+a.topicsSubMenu {
+    color: #ffffff;
+}
+.topicsSubMenu {
+    color: #ffffff;
 }

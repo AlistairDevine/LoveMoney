@@ -118,7 +118,7 @@ using AdaptiveCards.Blazor;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 136 "C:\Users\Dvine\Documents\GitHub\LoveMoneyV1\LoveMoneyBlazor\LoveMoneyBlazor\Pages\TemplatedComponent\MaxWidthStructure.razor"
+#line 137 "C:\Users\Dvine\Documents\GitHub\LoveMoneyV1\LoveMoneyBlazor\LoveMoneyBlazor\Pages\TemplatedComponent\MaxWidthStructure.razor"
        
     Article[] articles;
     string scheme = "";

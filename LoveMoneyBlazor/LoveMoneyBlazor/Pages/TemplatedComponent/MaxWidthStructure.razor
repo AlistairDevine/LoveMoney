@@ -125,6 +125,7 @@
         <div class="main_island">
             <div class="main_content">
                 <div class="main_content_item">
+                    <TemplatedAdaptiveCard CardClass="col-12" class="main-article" Schema="@Schemas.ImageGallery"></TemplatedAdaptiveCard>
                     <CardCollection TemplateSelector="SelectTemplate" CardClass="col-6" Models="@articles" CardAttributeFunctions="AttributeFunctions" @onclick="SearchArticle"></CardCollection>
                 </div>
             </div>
