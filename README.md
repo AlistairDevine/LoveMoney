@@ -1,2 +1,5 @@
 # LoveMoneyV1
- Recreation of LoveMoney on Blazor
+ 
+ Angular version
+
+(TODO : To be completed after the vertical version)
