@@ -47,6 +47,7 @@ i.oi:hover, i.oi:active {
 }
 .lm-header_cont {
     height: 60px;
+    margin: 0 25%;
 }
 /*Header brand css*/
 .lm-header_brand {
@@ -69,6 +70,7 @@ i.oi:hover, i.oi:active {
 }
 .dropdown-menu {
     display: block;
+    left: 25%;
     opacity: 10;
     animation: 0.5s fade-in ease-out;
 }
@@ -336,6 +338,8 @@ nav {
     background: #ffffff;
     border-bottom: 1px solid #000000;
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 .page-nav_content {
     padding: 22px 0px;
@@ -374,10 +378,10 @@ nav {
 }
 /*Header Search bar css*/
 .top-search-header {
-    position: absolute;
-    right: 140px;
-    width: 450px;
-    display: inline-block;
+    position: relative;
+    width: 650px;
+    display: inline-flex;
+    justify-content: center;
     animation: 0.5s fade-in ease-out;
     transition: transform 0.5s opacity ease-out;
     transform-origin: 100% 50%;
@@ -389,6 +393,7 @@ nav {
     border-bottom: 1px solid #000000;
     height: 34px;
     margin-top: 10px;
+    width: 100%;
 }
 .top-search_submit {
     position: absolute;

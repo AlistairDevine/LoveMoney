@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "uLJSNSyoyTcVdLe2UksJeGBqtsC0ySr/edQag6GQwdoLnz4RC9rz2pDyjAoANz7/6DnkzdSZaoL2NOjCJs+nMg==",
+  "dgSpecHash": "HiUZMdSxN2f577uSo5rEX4irUoLnaZEs1OOE6ILnk6DwErUdvXW9RXABQUJfj1vYo7qAGA1t/UDQii34Pf4JfA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Dvine\\Documents\\GitHub\\LoveMoneyV1\\LoveMoneyBlazor\\LoveMoneyBlazor\\LoveMoneyBlazor.csproj",
   "expectedPackageFiles": [
@@ -96,7 +96,8 @@
     "C:\\Users\\Dvine\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.1\\system.threading.tasks.extensions.4.5.1.nupkg.sha512",
     "C:\\Users\\Dvine\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\Dvine\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
-    "C:\\Users\\Dvine\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
+    "C:\\Users\\Dvine\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\Dvine\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.5\\microsoft.netcore.app.host.win-x64.5.0.5.nupkg.sha512"
   ],
   "logs": []
 }

@@ -70,16 +70,16 @@ section {
 .feature_main-img, .news-tile_img {
     height: 100%;
     width: 100%;
-    background-position: 50% 50%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    /*TODO : Not working correctly*/
-    background: url(../Images/articleBanner.png);
 }
 .feature_body {
     position: relative;
     width: 100%;
     z-index: 1;
+    background: url("../Images/articleBanner.png");
+    display: block;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .feature_body, .feature_main-img {
     padding: 120px 0 20px;
@@ -158,6 +158,10 @@ section {
 }
 .news-tile_body {
     height: 120px;
+    background: url("../Images/articleBanner.png");
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 /*Second part of main container*/
 .grid {
