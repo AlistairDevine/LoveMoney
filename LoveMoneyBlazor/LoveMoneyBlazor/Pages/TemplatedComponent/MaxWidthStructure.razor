@@ -18,7 +18,8 @@
                                             </span>
                                             <span class="feature_main-title-wrapper">
                                                 <span class="feature_main-title">
-                                                    <strong class="feature_heading">Quick car changes that could save you thousands.</strong>
+                                                    <strong class="feature_heading">Quick car changes that could save
+                                                        you thousands.</strong>
                                                 </span>
                                             </span>
                                         </span>
@@ -29,7 +30,8 @@
                             <ul class="feature_item-wrapper">
                                 <li class="feature_item u-1/3-desk u-1/1-lap u-1/1-palm">
                                     <article>
-                                        <a class="feature_item-link" href="/news/111407/investing-risk-savings-rates-stock-market-returns">
+                                        <a class="feature_item-link"
+                                            href="/news/111407/investing-risk-savings-rates-stock-market-returns">
                                             <span class="flag flag-rev">
                                                 <span class="flag_img">
                                                     <i class="subnav_icon icon-news-arrow-right"></i>
@@ -45,7 +47,8 @@
                                 </li>
                                 <li class="feature_item u-1/3-desk u-1/1-lap u-1/1-palm">
                                     <article>
-                                        <a class="feature_item-link" href="/news/111407/investing-risk-savings-rates-stock-market-returns">
+                                        <a class="feature_item-link"
+                                            href="/news/111407/investing-risk-savings-rates-stock-market-returns">
                                             <span class="flag flag-rev">
                                                 <span class="flag_img">
                                                     <i class="subnav_icon icon-news-arrow-right"></i>
@@ -61,7 +64,8 @@
                                 </li>
                                 <li class="feature_item u-1/3-desk u-1/1-lap u-1/1-palm">
                                     <article>
-                                        <a class="feature_item-link" href="/news/111407/investing-risk-savings-rates-stock-market-returns">
+                                        <a class="feature_item-link"
+                                            href="/news/111407/investing-risk-savings-rates-stock-market-returns">
                                             <span class="flag flag-rev">
                                                 <span class="flag_img">
                                                     <i class="subnav_icon icon-news-arrow-right"></i>
@@ -98,7 +102,8 @@
                                                                 <span class="feature_main-title-wrapper">
                                                                     <span class="feature_main-title">
                                                                         <span class="feature_heading">
-                                                                            I was conned out of a £300 deposit for kittens'
+                                                                            I was conned out of a £300 deposit for
+                                                                            kittens'
                                                                         </span>
                                                                     </span>
                                                                 </span>
@@ -125,7 +130,8 @@
         <div class="main_island">
             <div class="main_content">
                 <div class="main_content_item">
-                    <CardCollection TemplateSelector="SelectTemplate" CardClass="col-6" Models="@articles" CardAttributeFunctions="AttributeFunctions" @onclick="SearchArticle"></CardCollection>
+                    <CardCollection TemplateSelector="SelectTemplate" CardClass="col-6" Models="@articles"
+                        CardAttributeFunctions="AttributeFunctions" @onclick="SearchArticle"></CardCollection>
                 </div>
             </div>
         </div>
@@ -153,10 +159,10 @@
         return ModelTemplateCatalog.Get(article.GetType().Name);
     }
 
-    private List<(string, Func<int, object, object>)> AttributeFunctions = new List<(string, Func<int, object, object>)>() 
-    {
-        ("card-index", (i, model) => i.ToString())
-    };
+    private List<(string, Func<int, object, object>)> AttributeFunctions = new List<(string, Func<int, object, object>)>()
+{
+("card-index", (i, model) => i.ToString())
+};
 
     void SearchArticle()
     {
