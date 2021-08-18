@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alist\\OneDrive\\Documents\\GitHub\\LoveMoneyV1\\LoveMoneyBlazor\\LoveMoneyBlazor\\LoveMoneyBlazor.csproj": {}
+    "C:\\Users\\Dvine\\Documents\\GitHub\\LoveMoneyV1\\LoveMoneyBlazor\\LoveMoneyBlazor\\LoveMoneyBlazor.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alist\\OneDrive\\Documents\\GitHub\\LoveMoneyV1\\LoveMoneyBlazor\\LoveMoneyBlazor\\LoveMoneyBlazor.csproj": {
+    "C:\\Users\\Dvine\\Documents\\GitHub\\LoveMoneyV1\\LoveMoneyBlazor\\LoveMoneyBlazor\\LoveMoneyBlazor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alist\\OneDrive\\Documents\\GitHub\\LoveMoneyV1\\LoveMoneyBlazor\\LoveMoneyBlazor\\LoveMoneyBlazor.csproj",
+        "projectUniqueName": "C:\\Users\\Dvine\\Documents\\GitHub\\LoveMoneyV1\\LoveMoneyBlazor\\LoveMoneyBlazor\\LoveMoneyBlazor.csproj",
         "projectName": "LoveMoneyBlazor",
-        "projectPath": "C:\\Users\\alist\\OneDrive\\Documents\\GitHub\\LoveMoneyV1\\LoveMoneyBlazor\\LoveMoneyBlazor\\LoveMoneyBlazor.csproj",
-        "packagesPath": "C:\\Users\\alist\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alist\\OneDrive\\Documents\\GitHub\\LoveMoneyV1\\LoveMoneyBlazor\\LoveMoneyBlazor\\obj\\",
+        "projectPath": "C:\\Users\\Dvine\\Documents\\GitHub\\LoveMoneyV1\\LoveMoneyBlazor\\LoveMoneyBlazor\\LoveMoneyBlazor.csproj",
+        "packagesPath": "C:\\Users\\Dvine\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dvine\\Documents\\GitHub\\LoveMoneyV1\\LoveMoneyBlazor\\LoveMoneyBlazor\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\alist\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Dvine\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -59,6 +61,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[5.0.5, 5.0.5]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -67,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-preview.4.21255.9\\RuntimeIdentifierGraph.json"
         }
       }
     }

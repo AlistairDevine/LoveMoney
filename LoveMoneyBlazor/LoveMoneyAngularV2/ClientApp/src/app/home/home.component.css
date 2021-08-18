@@ -70,7 +70,7 @@ section {
     background-size: cover;
     background-repeat: no-repeat;
     /*TODO : Not working correctly*/
-    background: url(../Images/articleBanner.png);
+    background: url('');
 }
 .feature_body {
     position: relative;

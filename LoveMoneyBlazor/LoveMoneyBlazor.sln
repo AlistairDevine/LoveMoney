@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoveMoneyBlazor", "LoveMoneyBlazor\LoveMoneyBlazor.csproj", "{C7145A93-5333-40D4-ABFE-E3C251D28230}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoveMoneyAngularV2", "LoveMoneyAngularV2\LoveMoneyAngularV2.csproj", "{08A17812-C8EC-4113-833E-BF3D9495B6F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoveMoneyAngularV2", "LoveMoneyAngularV2\LoveMoneyAngularV2.csproj", "{08A17812-C8EC-4113-833E-BF3D9495B6F3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
