@@ -1,5 +1,9 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 #pragma checksum "C:\Users\Dvine\Documents\GitHub\LoveMoneyV1\LoveMoneyBlazor\LoveMoneyBlazor\Pages\TemplatedComponent\MaxWidthStructure.razor" "{ff1816ec-aa5e-4d10-87f7-6f4963833460}" "0a83bd1be67806d7f7321faba2d7a0bf260e1327"
+=======
+#pragma checksum "C:\Users\alist\OneDrive\Documents\GitHub\LoveMoneyV1\LoveMoneyBlazor\LoveMoneyBlazor\Pages\TemplatedComponent\MaxWidthStructure.razor" "{ff1816ec-aa5e-4d10-87f7-6f4963833460}" "0a83bd1be67806d7f7321faba2d7a0bf260e1327"
+>>>>>>> Stashed changes
 =======
 #pragma checksum "C:\Users\alist\OneDrive\Documents\GitHub\LoveMoneyV1\LoveMoneyBlazor\LoveMoneyBlazor\Pages\TemplatedComponent\MaxWidthStructure.razor" "{ff1816ec-aa5e-4d10-87f7-6f4963833460}" "0a83bd1be67806d7f7321faba2d7a0bf260e1327"
 >>>>>>> Stashed changes
@@ -130,7 +134,11 @@ using AdaptiveCards.Blazor;
             __builder.AddAttribute(11, "TemplateSelector", new System.Func<System.Object, System.String>(
 #nullable restore
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 #line 133 "C:\Users\Dvine\Documents\GitHub\LoveMoneyV1\LoveMoneyBlazor\LoveMoneyBlazor\Pages\TemplatedComponent\MaxWidthStructure.razor"
+=======
+#line 133 "C:\Users\alist\OneDrive\Documents\GitHub\LoveMoneyV1\LoveMoneyBlazor\LoveMoneyBlazor\Pages\TemplatedComponent\MaxWidthStructure.razor"
+>>>>>>> Stashed changes
 =======
 #line 133 "C:\Users\alist\OneDrive\Documents\GitHub\LoveMoneyV1\LoveMoneyBlazor\LoveMoneyBlazor\Pages\TemplatedComponent\MaxWidthStructure.razor"
 >>>>>>> Stashed changes
@@ -144,7 +152,11 @@ using AdaptiveCards.Blazor;
             __builder.AddAttribute(13, "Models", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Collections.Generic.IEnumerable<System.Object>>(
 #nullable restore
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 #line 133 "C:\Users\Dvine\Documents\GitHub\LoveMoneyV1\LoveMoneyBlazor\LoveMoneyBlazor\Pages\TemplatedComponent\MaxWidthStructure.razor"
+=======
+#line 133 "C:\Users\alist\OneDrive\Documents\GitHub\LoveMoneyV1\LoveMoneyBlazor\LoveMoneyBlazor\Pages\TemplatedComponent\MaxWidthStructure.razor"
+>>>>>>> Stashed changes
 =======
 #line 133 "C:\Users\alist\OneDrive\Documents\GitHub\LoveMoneyV1\LoveMoneyBlazor\LoveMoneyBlazor\Pages\TemplatedComponent\MaxWidthStructure.razor"
 >>>>>>> Stashed changes
@@ -157,7 +169,11 @@ using AdaptiveCards.Blazor;
             __builder.AddAttribute(14, "CardAttributeFunctions", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Collections.Generic.List<(System.String, System.Func<System.Int32, System.Object, System.Object>)>>(
 #nullable restore
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 #line 134 "C:\Users\Dvine\Documents\GitHub\LoveMoneyV1\LoveMoneyBlazor\LoveMoneyBlazor\Pages\TemplatedComponent\MaxWidthStructure.razor"
+=======
+#line 134 "C:\Users\alist\OneDrive\Documents\GitHub\LoveMoneyV1\LoveMoneyBlazor\LoveMoneyBlazor\Pages\TemplatedComponent\MaxWidthStructure.razor"
+>>>>>>> Stashed changes
 =======
 #line 134 "C:\Users\alist\OneDrive\Documents\GitHub\LoveMoneyV1\LoveMoneyBlazor\LoveMoneyBlazor\Pages\TemplatedComponent\MaxWidthStructure.razor"
 >>>>>>> Stashed changes
@@ -170,7 +186,11 @@ using AdaptiveCards.Blazor;
             __builder.AddAttribute(15, "onclick", Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
 #nullable restore
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 #line 134 "C:\Users\Dvine\Documents\GitHub\LoveMoneyV1\LoveMoneyBlazor\LoveMoneyBlazor\Pages\TemplatedComponent\MaxWidthStructure.razor"
+=======
+#line 134 "C:\Users\alist\OneDrive\Documents\GitHub\LoveMoneyV1\LoveMoneyBlazor\LoveMoneyBlazor\Pages\TemplatedComponent\MaxWidthStructure.razor"
+>>>>>>> Stashed changes
 =======
 #line 134 "C:\Users\alist\OneDrive\Documents\GitHub\LoveMoneyV1\LoveMoneyBlazor\LoveMoneyBlazor\Pages\TemplatedComponent\MaxWidthStructure.razor"
 >>>>>>> Stashed changes
@@ -190,7 +210,11 @@ using AdaptiveCards.Blazor;
         #pragma warning restore 1998
 #nullable restore
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 #line 142 "C:\Users\Dvine\Documents\GitHub\LoveMoneyV1\LoveMoneyBlazor\LoveMoneyBlazor\Pages\TemplatedComponent\MaxWidthStructure.razor"
+=======
+#line 142 "C:\Users\alist\OneDrive\Documents\GitHub\LoveMoneyV1\LoveMoneyBlazor\LoveMoneyBlazor\Pages\TemplatedComponent\MaxWidthStructure.razor"
+>>>>>>> Stashed changes
 =======
 #line 142 "C:\Users\alist\OneDrive\Documents\GitHub\LoveMoneyV1\LoveMoneyBlazor\LoveMoneyBlazor\Pages\TemplatedComponent\MaxWidthStructure.razor"
 >>>>>>> Stashed changes

@@ -75,6 +75,7 @@ section {
 
 .feature_main-img, .news-tile_img {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     height: 100%;
     width: 100%;
     background-position: 50% 50%;
@@ -83,6 +84,8 @@ section {
     /*TODO : Not working correctly*/
     background: url('');
 =======
+=======
+>>>>>>> Stashed changes
   height: 100%;
   width: 100%;
   background-position: 50% 50%;
@@ -90,6 +93,9 @@ section {
   background-repeat: no-repeat;
   /*TODO : Not working correctly
   background: url(../Images/articleBanner.png); */
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 }
 
@@ -192,12 +198,18 @@ section {
 
 .news-tile_body {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     height: 120px;
 =======
+=======
+>>>>>>> Stashed changes
   height: 120px;
 }
 .grid {
     padding: 0;
     list-style: none;
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 }
