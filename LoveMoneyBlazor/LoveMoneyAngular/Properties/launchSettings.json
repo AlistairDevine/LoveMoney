@@ -3,8 +3,13 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
+<<<<<<< Updated upstream
       "applicationUrl": "http://localhost:23913",
       "sslPort": 44335
+=======
+      "applicationUrl": "http://localhost:60170",
+      "sslPort": 0
+>>>>>>> Stashed changes
     }
   },
   "profiles": {
@@ -18,7 +23,11 @@
     "LoveMoneyAngular": {
       "commandName": "Project",
       "launchBrowser": true,
+<<<<<<< Updated upstream
       "applicationUrl": "https://localhost:5001;http://localhost:5000",
+=======
+      "applicationUrl": "http://localhost:5000",
+>>>>>>> Stashed changes
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

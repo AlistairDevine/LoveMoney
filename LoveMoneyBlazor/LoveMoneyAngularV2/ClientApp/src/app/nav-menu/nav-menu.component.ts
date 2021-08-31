@@ -12,7 +12,7 @@ export class NavMenuComponent {
     this.isExpanded = false;
   }
 
-  toggle() {
+  toggleSideNav() {
     this.isExpanded = !this.isExpanded;
   }
 }
