@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoveMoneyBlazor", "LoveMone
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoveMoneyAngularV2", "LoveMoneyAngularV2\LoveMoneyAngularV2.csproj", "{08A17812-C8EC-4113-833E-BF3D9495B6F3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoveMoneyAngularV3", "LoveMoneyAngularV3\LoveMoneyAngularV3.csproj", "{AD92DE19-42AE-4059-8D9A-F3E335C860EF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{08A17812-C8EC-4113-833E-BF3D9495B6F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{08A17812-C8EC-4113-833E-BF3D9495B6F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{08A17812-C8EC-4113-833E-BF3D9495B6F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD92DE19-42AE-4059-8D9A-F3E335C860EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD92DE19-42AE-4059-8D9A-F3E335C860EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD92DE19-42AE-4059-8D9A-F3E335C860EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD92DE19-42AE-4059-8D9A-F3E335C860EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
